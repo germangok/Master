@@ -124,7 +124,7 @@ header a {
   justify-content: normal;
   display: flex;
   bottom: 180deg;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Aclonica";
 }
 .presentar_img {
@@ -134,8 +134,8 @@ header a {
   background-position: center center;
   height: 300px;
   width: 450px;
-  padding: 10px 30px;
-  margin: 0px 60px 30px 150px;
+  padding: 0px 0px 0px 200px;
+  margin: 0px 60px 30px 100px;
 }
 .presentar_yc {
     text-align: justify;
