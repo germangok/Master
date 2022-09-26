@@ -7,7 +7,7 @@
 
 body{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 80px;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 80px;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -61,6 +61,10 @@ nav div{
 .proyecto-enlace a{
     color: #D35400;
     text-decoration: none;
+}
+.proyecto-enlace a:hover{
+    color: #000;
+    text-decoration: underline;
 }
 
 
