@@ -19,6 +19,20 @@ header{
     grid-column: 1 / span 3;
 }
 
+.logo--img{
+    width: 180px;
+    height: 50px;
+}
+
+nav div{
+    display: inline-block;
+}
+
+.nav-content li{
+    display: inline-block;
+    padding: 20px;
+}
+
 main{
     background: #E67E22;
     grid-row: 2 / 6;
