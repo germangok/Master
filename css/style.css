@@ -30,10 +30,12 @@
     height: 200px;
 }
 
+#titulo {
+    text-align: center;
+}
+
 .header__nav--mod {
-    width: 30%;
     display: flex;
-    justify-content: flex-end;
     gap: 15px;
 }
 
