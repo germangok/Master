@@ -30,6 +30,13 @@
     height: 200px;
 }
 
+.header__nav--mod {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
 .container__link--mod {
     color: #013e66;
     text-decoration: none;
@@ -59,7 +66,7 @@
     color: black;
 }
 
-#titulo {
+#titulo1 {
     color: white;
     text-align: center;
 }
