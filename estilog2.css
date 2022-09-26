@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header, main, footer{
+    padding: 20px;
+}
+
+header{
+    background: #fff;
+    grid-column: 1 / span 3;
+}
+
+main{
+    background: #E67E22;
+    grid-row: 2 / 6;
+    grid-column: 1 / span 3;
+}
+
+footer{
+    color: #fff;
+    background: #000;
+    grid-row: 6 / 7;
+    grid-column: 1 / span 3;
+
+}
+
