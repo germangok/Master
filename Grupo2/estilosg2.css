@@ -8,7 +8,7 @@
 
 body{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr 1fr 1fr 1fr 80px;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -73,7 +73,7 @@ nav div{
 
 
 main{
-    /* background: #E67E22; */
+    background: #E67E22;
     grid-row: 2 / 6;
     grid-column: 1 / span 3;
 }
