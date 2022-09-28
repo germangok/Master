@@ -78,11 +78,17 @@ main{
     grid-column: 1 / span 3;
 }
 
-.lider
+.lider div{
+    display: inline-block;
+}
 
 .lider-img{
     width: 150px;
     height: 200px;
+}
+
+.informacion-lider{
+    width: 600px;
 }
 
 
