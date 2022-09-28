@@ -90,8 +90,9 @@ footer ul{
     font-size: 15px;
     padding: 2%;
     color: rgb(34, 33, 33);
-    position: absolute;
-    top: 158%;
+   position: relative;
+   margin-top: -180px;
+    
     left:5px;
 }
 footer ul li{
@@ -99,11 +100,12 @@ footer ul li{
     margin-top: 5px;
 }
 footer nav {
-    position: absolute;
+    display: block;
+    position: relative;
     text-align: right;
     margin-top: 25px;
-    top: 175%;
-    left: 85%;
+    top: -20px;
+    margin-right: 5%;
 
 }
 footer nav a {
