@@ -73,10 +73,24 @@ nav div{
 
 
 main{
-    /* background: #E67E22; */
+    background: #E67E22;
     grid-row: 2 / 6;
     grid-column: 1 / span 3;
 }
+
+.lider div{
+    display: inline-block;
+}
+
+.lider-img{
+    width: 150px;
+    height: 200px;
+}
+
+.informacion-lider{
+    width: 600px;
+}
+
 
 
 
