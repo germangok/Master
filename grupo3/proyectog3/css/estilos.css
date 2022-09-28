@@ -25,7 +25,7 @@ header {
     }
     /*Estilo para el titulo principal*/
     .titulo{
-      width: 100%;
+      width: 70%;
       height: 100%;
       display: flex;
       align-items: center;
@@ -34,9 +34,9 @@ header {
     
     /*Aqui se da estilo al boton que lleva al proyecto del grupo 3*/
     .btn-proyecto {
-      background-color: #99b499; /* Green */
+      background-color:  rgb(140, 224, 158);/* Green */
       border-radius: 12px;
-      color: rgb(165, 29, 29);
+      color: rgb(15, 14, 14);
       padding: 20px;
       text-align: center;
       text-decoration: none;
@@ -45,7 +45,7 @@ header {
       margin-right: 20px;
       cursor: pointer;      
       width: 600px;
-      height: 120px;
+      height: 80px;
       font-weight: bold;     
 
     }
@@ -74,7 +74,7 @@ header {
         transition-duration: 3s, 5s;
       }
       body{
-        background-image:url("/grupo3/img/icons/fondo.jpg");
+        background-image:url("/proyectog3/proyectog3/img/icons/fondo.jpg");
       }
       /* Aqui inician los estilos del area de los perfiles*/
       #desarrollo{
@@ -95,7 +95,7 @@ header {
         
       }
       .mis-perfiles{
-        font-size:240%;
+        font-size:45px;
       }
       div.perfiles {
         width: 90%;
@@ -113,11 +113,17 @@ header {
       
       div.perfiles img.derecha {
         width: 200px;
-        height: 180px;
+        height: 250px;
         float: left;
-        padding: 15px;
+        padding: 25px;
         
       }
+      .volver{
+        float:left;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+   
       
       div.reset {
         clear: both;
@@ -131,4 +137,9 @@ header {
         display: ;
       }
       /* Aqui finalizan los estilos de los perfiles */
-      
+      /*estilos del footer*/
+      #foot{
+        color: #020024;
+        font-size: 30px;
+        text-align: center;
+      }

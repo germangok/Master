@@ -47,6 +47,7 @@
   }
   body{
     background-color: rgb(225, 220, 230);
+    background-image:url("/proyectog3/proyectog3/img/icons/fondo.jpg");
   }
   #rs { 
     display: block;
@@ -71,5 +72,10 @@
     font-family:helvetica;
     font-size: 80px;
     
+  }
+  .button{
+    border-radius:20px;
+    background: #FD9D0D;
+    width: 400px;
   }
     
