@@ -8,16 +8,17 @@
 
 body{
     display: grid;
-    grid-template-rows: 150px 1fr 1fr 1fr 1fr 80px;
+    grid-template-rows: 140px 1fr 1fr 1fr 1fr 100px;
     grid-template-columns: repeat(3, 1fr);
 }
 
-header, main, footer{
+header, footer{
     padding: 15px;
 }
 
 header{
-    background: #fff;
+    color: #fff;
+    background: #000;
     grid-column: 1 / span 3;
 }
 
@@ -39,18 +40,18 @@ nav div{
 }
 .nav-content a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 .nav-content a:hover{
     text-decoration: underline;
-    color: #D35400;
+    color: #00f;
 }
 .proyecto-grupo{
     position: relative;
     margin-top: 5px
 }
 .descripcion-grupo{
-    width: 600px;
+    width: 70%;
     height: 20px;
 }
 
@@ -73,22 +74,25 @@ nav div{
 
 
 main{
-    background: #E67E22;
+    background: radial-gradient(circle,#882FCC,#41078F);
     grid-row: 2 / 6;
     grid-column: 1 / span 3;
 }
 
-.lider div{
-    display: inline-block;
-}
-
 .lider-img{
-    width: 150px;
-    height: 200px;
+    margin: 10px;
+    float: left;
+    width: 160px;
+    height: 210px;
 }
 
-.informacion-lider{
-    width: 600px;
+.intengrantes{
+    padding: 10px;
+}
+
+.info-container{
+    color:#fff;
+    margin: 20px 0px 0px 10px;
 }
 
 
@@ -103,5 +107,4 @@ footer{
     background: #000;
     grid-row: 6 / 7;
     grid-column: 1 / span 3;
-
 }
