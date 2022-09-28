@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    font-size: 18px;
     /* outline: #000 1px solid; */
 }
 
 body{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 80px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -55,7 +56,7 @@ nav div{
 
 .proyecto-enlace{
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
 }
 .proyecto-enlace a{
@@ -63,7 +64,7 @@ nav div{
     text-decoration: none;
 }
 .proyecto-enlace a:hover{
-    color: #000;
+    color: #00f;
     text-decoration: underline;
 }
 
@@ -72,7 +73,7 @@ nav div{
 
 
 main{
-    background: #E67E22;
+    /* background: #E67E22; */
     grid-row: 2 / 6;
     grid-column: 1 / span 3;
 }
