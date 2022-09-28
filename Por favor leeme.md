@@ -1,3 +1,3 @@
 # Master
 
-Señor profesor la estructura de mi proyecto tuvo un cambio despues de haber aceptado el pull request, que sucedio?????
+Señor profesor la estructura de mi proyecto tuvo un cambio despues de que usted aceptara el pull request
