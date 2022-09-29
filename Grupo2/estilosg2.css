@@ -74,6 +74,7 @@ nav div{
 
 
 main{
+    color: #fff;
     background: radial-gradient(circle,#882FCC,#41078F);
     grid-row: 2 / 6;
     grid-column: 1 / span 3;
@@ -101,7 +102,6 @@ main h3{
 }
 
 .info-container{
-    color:#fff;
     margin: 20px 0px 0px 10px;
 }
 
