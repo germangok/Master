@@ -21,11 +21,11 @@ header p{
     left:5px;
 }
 header nav {
-    position: absolute;
+    display: block;
+    position: relative;
     text-align: right;
-    margin-top: 25px;
-    top: 75%;
-    left: 85%;
+    margin-top: -50px;
+    margin-right: 5%
 
 }
 header nav a {
@@ -33,18 +33,24 @@ header nav a {
     text-decoration: none;
     font-size: 22px;
     font-family: fantasy;
-    color: black
+    color: black;
+    margin-top: -10%;
 }
 
 /*Empieza cuerpo*/
 body{
-    background-color:#b2e2f2
+    background-image: url(./img/fondo.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+
 }
 .seccion1{
     background-color: #95b8f6;
-    margin: 20px;
+    margin: 40px;
     font-size: 20px;
-    ;
+    padding: 2%;
+    border-radius: 20px;
 }
 .seccion1 h4{
     font-size: 25px;
@@ -62,6 +68,7 @@ h3{
     width: 95%;
     float: left;
     margin: 2%;
+    border-radius: 15px;
 
 }
 .perfil h4{
