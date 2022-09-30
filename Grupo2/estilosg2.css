@@ -74,8 +74,8 @@ nav div{
 
 
 main{
-    color: #fff;
-    background: radial-gradient(circle,#882FCC,#41078F);
+    color: #000;
+    background: #fff;
     grid-row: 2 / 6;
     grid-column: 1 / span 3;
 }
