@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id= Registro action="Registro">Diligencia el siguiente formulario</form>
+
+    <fieldset class="Registro">
+        <legend>Registro</legend>
+        <label for="Nombres" > Nombres </label>
+        <input type="text" id="Nombres" name="Nombres" required ><br>
+
+        <label for="Apellidos" >Apellidos</label>
+        <input type="text" id="Apellidos" name="Apellidos" required> <br>
+
+        <label for="Género">Género</label> <br>
+        <label for="Género">Femenino</label>
+        <input type="radio" id="Género" name="Género" required> <br>
+        <label for="Género">Masculino</label>
+        <input type="radio" id="Género" name="Género" required> <br>
+        
+        <label for="City">Ciudad</label>
+        <input list="city" placeholder="Seleccionar" > <br>
+        <datalist id="city">
+            <option>Arauca</option>
+            <option>Barranquilla</option>
+            <option>Bogota</option>
+            <option>Cali</option>
+            <option>Cartagena</option>
+            <option>Cúcuta</option>
+            <option>Florencia</option>
+            <option>Ibagué</option>
+            <option>Leticia</option>
+            <option>Mocoa</option>
+        </datalist>
+        
+        <label for="Teléfono">Telefono</label> 
+        <input type="tel" id="Telefono" name="Telefono" required> <br>
+
+        <label for="Fecha">Fecha</label>
+        <input type="date" id=" Fecha" name="Fecha" required> <br>
+
+        <label for="Correo">Correo Electrónico</label>
+        <input type="email" id=" Correo" name="Correo" required> <br>
+</body>
+</html>
