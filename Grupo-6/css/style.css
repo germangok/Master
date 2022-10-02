@@ -1,11 +1,11 @@
 .container {
-  width: 95%;
+  width: auto;
   height: auto;
   margin: auto;
   padding: 10px;
   color: #013e66;
   border-radius: 10px;
-  background: #177c91;
+  background-image: url("/Grupo-6/imagenes/fondo.jpg");
   display: grid;
   grid-gap: 20px;
   grid-template-rows: repeat(7, auto);
