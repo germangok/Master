@@ -1,0 +1,89 @@
+/*Estilos del cuerpo*/
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/Grupo-6/Proyecto-Grupo-6/imagenes/fondo.jpg);
+}
+
+/*Estilos del encabezado*/
+.container__header--mod{
+  width: 100%;
+  height: 100px;
+}
+
+/*Estilos del logo*/
+.container__logo--mod{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+/*Estilos del contenedor general*/
+.container{
+    width: 400px;
+    height: auto;
+    padding: 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #e3f8ff;
+}
+
+/*Estilos del titulo*/
+.container__title--mod{
+    padding: 0;
+    font-size: 30px;
+    margin: 0 0 30px;
+    color: #013e66;
+    text-align: center;
+}
+
+/*Color de letra etiquetas*/
+.container__lab--mod{
+    color: #013e66;
+    font-size: 20px;
+}
+
+/*Estilos de los input*/
+.container__input--mod{
+    width: 100%;
+    border: none;
+    color: black;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    background: transparent;
+    border-bottom: 1px solid #013e66;
+}
+
+/*Estilos del boton enviar*/
+.container__input--mod[type="submit"]{
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #013e66;
+}
+
+/*Estilos de texto*/
+.container__txt--mod{
+  font-size: 20px;
+  color: #013e66;
+  text-align: center;
+}
+
+/*Estilos del link hazlo aqui*/
+.container__link--mod{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*Estilos del link hazlo aqui*/
+.container__link--mod:hover{
+  color: blue;
+}
