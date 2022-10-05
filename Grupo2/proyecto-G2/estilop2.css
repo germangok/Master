@@ -1,0 +1,158 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    --red-color: #bb0b0b;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.header{
+    padding: 10px;
+    color: var(--white-color);
+    background: var(--black-color);
+    flex-basis: 100px;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+.header-container a{
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+.logovf1{
+    height: 120px;
+    width: 120px;
+}
+h1{
+    margin-left: 20px;
+    width: 150px;
+    text-align: center;
+    font-family: "Mr Bedfort";
+    font-size: 35px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: var(--red-color);
+    text-shadow: 1px 1px 1px var(--white-color);
+}
+li{
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    background: var(--red-color);
+    margin: 10px 0px;
+    padding: 10px 0;
+}
+.nav a{
+    margin: auto;
+    color: var(--white-color);
+    text-decoration: none;
+    text-shadow: 3px 3px 2px #000;
+}
+.nav a:hover{
+    text-shadow: 1px 1px 2px #fff;
+    color: var(--black-color);
+}
+
+
+.main{
+    background: #c1c1c1;
+    flex-basis: 400px;
+    flex-grow: 2;
+    flex-shrink: 0;
+    padding: 5px;
+}
+
+
+.footer{
+    color: var(--white-color);
+    background: var(--black-color);
+    flex-grow: auto;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+}
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer li{
+    padding: 10px;
+    background: transparent;
+    margin: auto;
+}
+.footer li i{
+    text-align: center;
+    color: var(--red-color);
+    font-size: 40px;
+}
+.footer li i:hover{
+    color: var(--white-color);
+}
+.form-container{
+    padding: 20px 10px;
+}
+h5{
+    padding: 10px ;
+    text-align: center;
+}
+.form{
+    display: flex;
+    align-items: center;
+}
+#email{
+    outline: 2px solid var(--red-color);
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+    margin-right: 5px;
+}
+#submit{
+    font-weight: bold;
+    outline: 1px solid var(--white-color);
+    color: var(--white-color);
+    background: var(--red-color);
+    padding: 5px;
+    width: auto;
+    margin: auto;
+    margin-left: 5px;
+}
+
+
+
+@media screen and (min-width: 800px){
+    body{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header{
+        grid-column: 1 / span 3;
+    }
+
+    main{
+        grid-row: 2 / 6;
+        grid-column: 1 / span 3;
+    }
+
+    footer{
+        grid-row: 6 / 7;
+        grid-column: 1 / span 3;
+
+    }
+}

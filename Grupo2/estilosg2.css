@@ -75,7 +75,7 @@ nav div{
 
 main{
     color: #000;
-    background: #fff;
+    background: radial-gradient(circle,#eee,#bbb);
     grid-row: 2 / 6;
     grid-column: 1 / span 3;
 }
@@ -121,6 +121,7 @@ footer{
     grid-row: 6 / 7;
     grid-column: 1 / span 3;
 }
+
 
 .footer-info{
     margin-left: 25%;
