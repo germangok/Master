@@ -8,9 +8,11 @@
     color: #013e66;
     padding: 20px 20px;
     border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
     grid-template-rows: repeat(2, auto);
     font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
-    background-image: url("/imagenes/fondo.jpg");
+    background-image: url("/Grupo6/imagenes/fondo.jpg");
 }
 /*Estilos del header*/
 .container1__header--mod{
@@ -50,6 +52,10 @@
     text-align: justify;
     padding: 10px;
     font-size: 25px;
+}
+
+#titulo{
+    color: #e3f8ff;
 }
 /*Fin de estilos contenedor 1*/
 
@@ -165,7 +171,7 @@
         border-radius: 20px;
         grid-template-rows: repeat(2, auto);
         font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
-        background-image: url("/imagenes/fondo.jpg");
+        background-image: url("/Grupo6/imagenes/fondo.jpg");
     }
 
     .container1__header--mod{
@@ -326,7 +332,7 @@
         border-radius: 20px;
         grid-template-rows: repeat(2, auto);
         font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
-        background-image: url("/imagenes/fondo.jpg");
+        background-image: url("/Grupo6/imagenes/fondo.jpg");
     }
 
     .container1__header--mod{
@@ -489,7 +495,7 @@
         border-radius: 20px;
         grid-template-rows: repeat(2, auto);
         font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
-        background-image: url("/imagenes/fondo.jpg");
+        background-image: url("/Grupo6/imagenes/fondo.jpg");
     }
 
     .container1__header--mod{
