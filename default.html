@@ -1,71 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos Grupo 13 Kuepa</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Estilo para la barra de navegación */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Estilo para los enlaces en la barra de navegación */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Estilo por defecto desktop first
+        Crea tres columnas que flotan una tras otra */
+        .column {
+            float: left;
+            width: calc((100% - 60px)/3 );
+            padding: 20px;
+        }
+
+        /* Rompe el flujo que trae la nagegación de las columnas */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+        /* Cambia el color al pasar el puntero del mouse */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Media query para pantallas con menor y máximo ancho de 992px, pasa de 3 a 2 columnas */
+        @media screen and (max-width: 992px) {
+            .column {
+                width: calc((100% - 40px)/2 );
+            }
+        }
+
+        /* Media query para pantallas con menor y máximo ancho de 600px */
+        @media screen and (max-width: 600px) {
+            /* Hace apilar los enlaces uno sobre otro, en lugar de uno al lado del otro */
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+            /* Hace apilar las columnas una sobre otra, en lugar de una al lado de la otra */
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
-<img src="" alt="">
-<h1>Portal</h1>
-<h2>subtitulo</h2>
-<nav>
-    <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-    </ul>
-</nav>
+        <img src="" alt="">
+        <h1>Portal Proyectos Grupo 13</h1>
+        <h2>Kuepa Edutech</h2>
+        <nav class="topnav">
+
+            <a href="#g1">Proyecto Grupo 1</a>
+            <a href="#g2">Proyecto Grupo 2</a>
+            <a href="#g3">Proyecto Grupo 3</a>
+            <a href="#g4">Proyecto Grupo 4</a>
+            <a href="#g5">Proyecto Grupo 5</a>
+            <a href="#g6">Proyecto Grupo 6</a>
+            <a href="#g7">Proyecto Grupo 7</a>
+            <a href="#g8">Proyecto Grupo 8</a>
+            <a href="#g9">Proyecto Grupo 9</a>
+
+        </nav>
     </header>
     <main>
-        <section>
+        <section class="row">
             <h3>Proyectos G13</h3>
-            <article>
+            <article class="column" id="g1">
                 <h3>Grupo1</h3>
                 <p>Detalles1</p>
             </article>
-            <article>
+            <article class="column" id="g2">
                 <h3>Grupo2</h3>
                 <p>Detalles2</p>
             </article>
-            <article>
-                <h3>Grupo3</h3>
-                <p>Detalles3</p>
+            <article class="column" id="g3">
+
+                <a href="grupo3/grupo3.html">
+                    <h3>Grupo3</h3>
+                </a>
+                <p>Sitio web para establecimiento de venta de comidas rápidas</p>
             </article>
-            <article>
+            <article class="column" id="g4">
                 <h3>Grupo4</h3>
                 <p>Detalles4</p>
             </article>
-            <article>
+            <article class="column" id="g5">
                 <h3>Grupo5</h3>
                 <p>Detalles5</p>
             </article>
-            <article>
+            <article class="column" id="g6">
                 <h3>Grupo6</h3>
                 <p>Detalles6</p>
             </article>
-            <article>
+            <article class="column" id="g7">
                 <h3>Grupo7</h3>
                 <p>Detalles7</p>
             </article>
-            <article>
+            <article class="column" id="g8">
                 <h3>Grupo8</h3>
                 <p>Alimentos de mar</p>
                 <a href="grupo8/grupo8.html>Presentación Grupo 8</a>
             </article>
-            <article>
+            <article class="column" id="g9">
                 <h3>Grupo9</h3>
                 <p>Detalles9</p>
             </article>
         </section>
     </main>
+    <footer>
+        <img src="" alt="">
+        <h1>Portal Proyectos Grupo 13</h1>
+        <h2>Kuepa Edutech</h2>
+        <nav class="topnav">
+            <a href="#g1">G1</a>
+            <a href="#g2">G2</a>
+            <a href="#g3">G3</a>
+            <a href="#g4">G4</a>
+            <a href="#g5">G5</a>
+            <a href="#g6">G6</a>
+            <a href="#g7">G7</a>
+            <a href="#g8">G8</a>
+            <a href="#g9">G9</a>
+    </footer>
 </body>
 </html>
+
