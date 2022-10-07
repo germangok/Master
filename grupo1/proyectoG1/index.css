@@ -1,0 +1,591 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-principal: linear-gradient(90deg, #3e4424 0%, #7b920a 100%);
+  --color-titulo-1: #f6b900;
+  --color-titulos-2: rgb(255, 255, 255);
+  --color-titulos-productos: rgba(255, 255, 255, 1);
+  --color-titulos-3: rgba(97, 140, 3, 1);
+  --color-hover: rgb(56, 250, 31);
+  --colo-fondo: #f5d677a2;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--colo-fondo);
+}
+/*------------------------------------------ HEADER ------------------------------------*/
+.header__container {
+  position: absolute;
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(90deg, #3e4424 0%, #7b920a 100%);
+}
+.header__logo {
+  position: absolute;
+  width: 6%;
+  left: 8%;
+  top: 5%;
+  border-radius: 50%;
+}
+.header_titulo {
+  position: absolute;
+  width: 20%;
+  left: 15%;
+  top: 8%;
+  font-family: "Aclonica";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header_titulo a {
+  text-decoration: none;
+  color: var(--color-titulo-1);
+}
+.header_titulo a:hover {
+  color: black;
+}
+.header_titulo a:active {
+  color: red;
+}
+
+/*--------------------------- barra de busqueda -----------------------*/
+.header__search {
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  padding: 10px;
+}
+.search__input {
+  box-sizing: border-box;
+  width: 90%;
+  height: 30px;
+  padding: 0 30px;
+  color: black;
+  border-radius: 15px;
+  font-family: "Arbutus Slab";
+  font-size: 2.5vh;
+  border: var(--color-titulos-3);
+}
+::placeholder {
+  color: #7b920a;
+}
+.header__search:hover input {
+  width: 110%;
+}
+/*-------------------------Iconos de compra y login-------------------*/
+.iconocontainer {
+  display: flex;
+  list-style-type: none;
+}
+.icono1_carrito {
+  position: absolute;
+  width: 3%;
+  left: 85%;
+  top: 20%;
+}
+.icono2_cuenta {
+  position: absolute;
+  width: 3%;
+  left: 92%;
+  top: 22%;
+}
+/*--------------------------------Navegacion----------------------------*/
+.navcontainer {
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  top: 15%;
+  background: var(--color-titulo-1);
+  display: flex;
+}
+.nav__main {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-left: 70%;
+  top: 20%;
+}
+.nav__main a {
+  text-decoration: none;
+  padding-left: 50px;
+  font-weight: bold;
+  font-family: "Aclonica";
+  color: var(--color-titulos-2);
+}
+.nav_main_item a:hover {
+  color: blue;
+}
+.nav_main_item a:active {
+  color: red;
+}
+/*------------------------------------------ MAIN -----------------------------------------*/
+.main__container {
+  width: 100%;
+}
+/*-------------- Seccion 1 imagen y nombre de la empresa-----------------------------------------*/
+.empresa {
+  display: flex;
+}
+.empresa_img {
+  position: absolute;
+  top: 22%;
+  width: 100%;
+  height: 45vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/empresa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+}
+.empresa_titulo {
+  position: absolute;
+  width: 30%;
+  left: 70%;
+  top: 28%;
+  font-family: "Aclonica";
+  color: var(--color-titulo-1);
+  font-size: 40px;
+  line-height: 54px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.empresa_titulo a {
+  text-decoration: none;
+  color: var(--color-titulo-1);
+}
+.empresa_titulo a:hover {
+  color: black;
+}
+.empresa_titulo a:active {
+  color: red;
+}
+/*----------------Seccion 2 (cuatro productos: Carnes,lacteos,carnicos, frutas y verduras)-------*/
+.productos__container {
+  position: absolute;
+  display: flex;
+  background: #f1e6c38e;
+  justify-content: space-between;
+  padding: 2%;
+  top: 67%;
+  width: 100%;
+  height: 45vh;
+}
+.productos_cards {
+  width: 255px;
+  height: 237px;
+  border-radius: 20px;
+  box-shadow: 5px 2px 20px rgb(14, 13, 13);
+}
+.productos_cards:hover {
+  cursor: pointer;
+  box-shadow: 10px 5px 5px;
+  transition: 800ms;
+  margin-top: 4px;
+}
+.card_carnes {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/carne.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card_lacteos {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/lacteos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card_carnicos {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/carnicos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card_frutas {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/frutas-y-verduras.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.productos__container a {
+  text-decoration: none;
+}
+.productos__titulo {
+  width: 100%;
+  padding: 12%;
+  font-family: "Aclonica";
+  font-size: 5vh;
+  text-decoration: none;
+  line-height: 45px;
+  color: var(--color-titulos-productos);
+}
+.productos_button {
+  font-weight: bold;
+  font-family: "Aclonica";
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin-left: 15%;
+  margin-top: 15%;
+  border-radius: 25px;
+  border: 1px solid var(--color-principal);
+  box-shadow: 5px 2px 20px rgb(255, 255, 255);
+  color: var(--color-titulos-productos);
+  background: var(--color-principal);
+}
+.productos_button:hover {
+  cursor: pointer;
+  box-shadow: 10px 5px 5px;
+  transition: 800ms;
+  margin-top: 33px;
+}
+.productos_button h2 {
+  color: var(--color-titulos-productos);
+}
+.button4 {
+  margin-top: 0;
+}
+.button4:hover {
+  cursor: pointer;
+  box-shadow: 8px 5px 5px;
+  transition: 800ms;
+  margin-top: 5px;
+}
+/*---------------------Seccion 3 ofertas (tres productos en oferta: carnes, frutas, verduras)---*/
+.ofertas__container {
+  position: absolute;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/oferta.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  top: 120%;
+  width: 90%;
+  height: 90vh;
+  margin-left: 5%;
+  box-shadow: 5px 2px 20px rgb(14, 13, 13);
+}
+.ofertas_cards {
+  position: absolute;
+  width: 290px;
+  height: 220px;
+  border-radius: 20px;
+  box-shadow: 5px 2px 20px rgb(14, 13, 13);
+}
+.ofertas_cards:hover {
+  cursor: pointer;
+}
+.ofertas_carnes {
+  margin-top: 15%;
+  margin-left: 10%;
+  padding: 4%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/carnes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.ofertas_carnes:hover {
+  transition: 800ms;
+  margin-left: 130px;
+}
+.ofertas_frutas {
+  margin-top: 3%;
+  margin-left: 55%;
+  padding: 4%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/frutas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.ofertas_frutas:hover {
+  transition: 800ms;
+  margin-top: 40px;
+}
+.ofertas_verduras {
+  margin-top: 27%;
+  margin-left: 55%;
+  padding: 4%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/verduras.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.ofertas_verduras:hover {
+  transition: 800ms;
+  margin-top: 320px;
+}
+.ofertas_titulo{
+  width: 100%;
+  font-family: "Aclonica";
+  font-size: 5vh;
+  text-decoration: none;
+  line-height: 5vh;
+  color: var(--color-titulos-productos);
+}
+.ofertas_numero {
+  width: 100%;
+  font-family: "Aclonica";
+  margin-top: 9%;
+  font-size: 11vh;
+  line-height: 5vh;
+  text-align: end;
+  color: var(--color-titulos-productos);
+}
+/* --------------linea estilo flecha hacia abajo------------------ */
+.linea__abajo {
+  position: absolute;
+  background-image:  url("./mediapg1/linea1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  top: 208%;
+  width: 90%;
+  height: 12vh;
+  margin-left: 4.8%;
+}
+/* ------------Seccion 4 actualidad y multimedia con animaciones algunos botones----------------*/
+.actualidad_multimedia {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  top: 225%;
+  height: 90vh;
+  margin-left: 5%;
+}
+.titulo_actumulti{
+  font-family: "Aclonica";
+  color: black;
+}
+.actualidad__titulo {
+  position: absolute;
+  margin-left: 15%;
+  top: 0;
+}
+.multimedia__titulo{
+  position: absolute;
+  margin-left: 68%;
+  top: 0;
+}
+.actualidad__contenido {
+  position: absolute;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.137),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/actualidad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  top: 10%;
+  width: 40%;
+  height: 70vh;
+  margin-left: 5%;
+  box-shadow: 5px 2px 20px rgb(14, 13, 13);
+}
+.actualidad__subtitulos {
+  width: 65%;
+  font-family: "Aclonica";
+  color: var(--color-titulos-2);
+  margin: 10%;
+  text-align:left;
+  padding: 5px 40px;
+  background: rgba(0, 0, 0, 0.178);
+  border-radius: 20px;
+  box-shadow: 5px 2px 20px rgb(14, 13, 13);
+}
+.actualidad__subtitulos:hover{
+  cursor: pointer;
+}
+.subtitulo1:hover {
+  transition: 800ms;
+  margin-left: 80px;
+}
+.subtitulo2:hover {
+  transition: 800ms;
+  margin-left: 80px;
+}
+.subtitulo3:hover {
+  transition: 800ms;
+  margin-left: 80px;
+}
+.subtitulo4:hover {
+  transition: 800ms;
+  margin-left: 80px;
+}
+.multimedia_video {
+  position: absolute;
+  width: 40%;
+  height: 55vh;
+  top: 10%;
+  margin-left: 55%;
+}
+.botones{
+  position: absolute;
+  display: flex;
+  top: 68%;
+  margin-left: 58%;
+}
+/* --------------------------linea estilo flecha hacia arriba----------------------------- */
+.linea__arriba {
+  position: absolute;
+  background-image:  url("./mediapg1/linea2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  top: 314%;
+  width: 90%;
+  height: 12vh;
+  margin-left: 4.8%;
+}
+/* --------------------------------------------footer----------------------------------------------------*/
+.footer__container {
+  position: absolute;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./mediapg1/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  top: 325%;
+  width: 100%;
+  height: 56vh;
+}
+.texto {
+  width: 30%;
+  font-family: "Aclonica";
+  color: var(--color-titulos-2);
+  margin: 5%;
+  padding: 5px 40px;
+  border-radius: 20px;
+}
+.footer_preguntas{
+  position: absolute;
+  line-height: 6vh;
+  margin-top: 4%;
+  font-size: 4vh;
+}
+.footer_derechos{
+  position: absolute;
+  width: auto;
+  margin-top: 20%;
+  font-size: 3vh;
+}
+.footer_linea{
+  position: absolute;
+  background-image: url("./mediapg1/linea3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  top: 79%;
+  width: 3px;
+  height: 9vh;
+  margin-left: 51%;
+
+}
+/* -------------Texto de contacto-------------> */
+.footer_contacto {
+  display: flex;
+  position: absolute;
+  line-height: 6vh;
+  margin-left: 68%;
+  margin-top: 4%;
+  font-size: 4vh;
+}
+.footer_agriculores{
+  position: absolute;
+
+  margin-left: 70%;
+  margin-top: 19%;
+  font-size: 3vh;
+}
+/* -----------Emogis de las redes sociales----------- */
+.footerlogo{
+  position: absolute;
+  width: 11%;
+  left: 44.9%;
+  top: 5%;
+  border-radius: 50%;
+}
+.footer_emogis{
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  margin-top: 14%;
+  margin-left: 39%;
+  padding: 0 3%;
+}
+.footer_emogi{
+  width: 60%;
+}
+.footer_emogi:hover{
+  cursor: pointer;
+  transition: 800ms;
+  margin-left: 6px;
+}
+.footer_facebook{
+  width: 75%; 
+}
+.footer_sucribase{
+  position: absolute;
+  width: 11%;
+  left: 48%;
+  top: 65%;
+  font-family: "Aclonica";
+  color: var(--color-titulos-2);
+}
