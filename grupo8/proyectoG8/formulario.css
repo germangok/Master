@@ -1,0 +1,31 @@
+/*estilos formulario*/
+form{
+    
+    color: coral;
+    text-align: center;
+    font-family: Arial; 
+    font-size: 27px;
+    display: block;
+    margin-left: 20;
+    margin-right: 20;
+    margin-top: 20;
+    margin-bottom: 20;
+    background-color: wheat;
+}
+form fieldset{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+input#boton{
+    padding: 5px;
+    color: gray;
+    font-size: 1em;
+    background-color:wheat;
+    border: 0;
+    border-radius: 5px;
+}
+
+input#boton:hover{
+    background-color:white;
+}

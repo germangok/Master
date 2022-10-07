@@ -1,0 +1,38 @@
+<form id="NewUser" action="index.html">
+    <fieldset>
+        <link rel="stylesheet" href="formulario.css">
+       <legend>Nuevo Usuario </legend>
+        <div id="contenedor-3primeros">
+            <br>
+           <label for="iname">Nombre: </label>
+           <input id="iname" type="text"text name="name"><br><br>
+
+           <label for="iusername"> Apellidos: </label>
+           <input id="iusername" type="text"text name="username"><br><br>
+
+           <label for="icity">Ciudad:</label>
+           <input list="icity"> <datalist id="icity"> <option>Bogota</option> <option>cali</option> <option>Barranquilla</option><option>Armenia</option></datalist><br><br>
+        </div>
+
+           <label for="iemail"> Correo: </label>
+           <input id="iemail" type="email"text name="email" required>
+
+           <label for="date"> Fecha de nacimiento :  </label>
+           <input id="idate" type="date"text name="date" ><br><br>
+
+           <label for="ipassword" >Contraseña:</label>
+           <input id="ipassword" type="password" text name="password" required>
+
+           <label for="iphone">Telefono: </label>
+           <input id="iphone" type="number" text name="iphone"> <br><br>
+
+          <label for="imensaje">Mensaje:</label><br>
+          <textarea name="mensaje" id="mensaje" rows="6" class="input-padron" required></textarea><br><br>
+
+          <label class="checkbox" form="terminos"><input id="checkbox" type="checkbox" required>Acepto terminos y condiciones </label>
+
+          <input type="submit" value="Enviar" id="boton">
+        
+    </fieldset><br><br>
+
+</form>      
