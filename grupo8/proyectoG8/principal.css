@@ -24,7 +24,7 @@ header p{
     top: 35%;
 }
 /*cuerpo*/
-.main__contenedor--buscar{
+.main__buscar{
     background-color: rgb(225, 223, 223);
     display: flex;
     flex-direction: row;
@@ -32,10 +32,10 @@ header p{
     align-content: center;
 }
 
-.icono{
+.main__buscar--icono{
     width: 20%px;
 }
-.buscar--input{
+.main__buscar--input{
     width: 200px;
     height: 34px;
     color: black;
@@ -44,7 +44,7 @@ header p{
     text-align: center;
 }
 /*body*/
-.main__contenedor--alimentos{
+.main__contenedor{
     display: flex;
     flex-direction: column;
     
@@ -55,7 +55,7 @@ h2,h3 {
     margin: 10px;
 }
 
-.comidas{
+.main__contenedor--comidas{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -64,16 +64,16 @@ h2,h3 {
     border-radius: 12px;
     margin: 0 auto;
 }
-.comidas:hover{
+.main__contenedor--comidas:hover{
     transform: scale(1.02)
 }
-.descripción p, h4{
+.main__contenedor--comidasdescripción p, h4{
     padding: 5px;
     margin: 5px;
     text-align: center;
 }
 
-.comidas img{
+.main__contenedor--comidas img{
     width: 80%;
     max-width: 350px;
     object-fit:cover;
@@ -101,18 +101,16 @@ h2,h3 {
 /* para dispositivos de mayor tamaño*/
 @media screen and (min-width:700px){
 
-    .main__conte{
+    .main__contenedor--platos{
         display:flex;
         flex-wrap: wrap;
         align-content: center; }
-    .Comida--plato{
+    .main__contendor--contenido{
         justify-content: space-between;
         width: 33%;
         text-align: center;  
     }  
-    .comidas{
-        width: 80%;
-    } 
+   
  } 
  @media screen and (min-width:898px){
     header{

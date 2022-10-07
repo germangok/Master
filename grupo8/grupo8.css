@@ -53,7 +53,7 @@ body{
     background-size: cover;
 
 }
-.seccion1{
+.main__seccion1{
     display: block;
     background-color: #95b8f6;
     margin: 40px;
@@ -62,7 +62,7 @@ body{
     border-radius: 20px;
     
 }
-.seccion1 h4{
+.main__seccion1 h4{
     font-size: 25px;
     margin-top: 15px;
     text-align: center;
@@ -73,32 +73,33 @@ h3{
     text-align: center;
     font-size: 20px;
 }
-.perfiles{
+.main__perfiles{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
-.perfil {
+.main__perfiles--contenido {
     background-color:rgba(255, 242, 205, 0.923) ;
     width: 95%;
     float: left;
-    margin: 2%;
+    margin: 1.5%;
     border-radius: 15px;
+    align-content: center;
 
 }
-.perfil h4{
+.main__perfiles--contenido h4{
     font-size: 20px;
     margin-left: 2%;
 }
-.perfil img{
+.main__perfiles--contenido img{
     float: left;
-    width: 10%;
+    width: 25%;
     padding: 15px;
     
 }
-.perfil p{
+.main__perfiles--contenido p{
     font-size: 17px;
     margin-top: 2%;
-
+    padding:5%;
 }
 /*comienza footer*/
 .footer  {
@@ -113,7 +114,7 @@ footer ul{
     font-size: 13px;
     padding: 1.5%;
     color: rgb(0, 0, 0);
-    top: -19px;%;
+    top: -19px;
 }
 footer ul li{
     display: block;
@@ -138,7 +139,35 @@ footer nav a {
     text-shadow: 0 4px 4px gray;
     
 }
-@media screen and (min-width:898px){
+
+/*dispositivo mediano*/
+
+@media (min-width:520px){
+    .main__perfiles{
+        display:flex;
+        flex-wrap: wrap;
+        align-content: center; 
+    }
+    .main__perfiles--contenido{
+        justify-content: space-between;
+        width: 47%;
+        text-align: center;  
+        
+    }
+}
+/*dispositivo grande*/
+@media (min-width:900px){
+    .main__perfiles{
+        display:flex;
+        flex-wrap: wrap;
+        align-content: center; 
+    }
+    .main__perfiles--contenido{
+        justify-content: space-between;
+        width: 30%;
+        text-align: center;  
+        
+    }
     header{
         width: 100%;
         height: 500px;

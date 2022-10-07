@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="pago.css">
+</head>
+<body>
+    <!--comienza header-->    
+<header>
+    <p>"Tan cerca como estar en el mar"</p>  
+</header>
+<!--comienza cuerpo del proyecto--> 
+<main >
+    <div class="main__buscar">
+        <img class="main__buscar--icono" src="./imagenes/iconomenu.svg" alt="">
+        <div class="contenedor--barradebusqueda">
+            <input class="main__buscar--input"type="text" placeholder="Buscar" >
+        </div>
+        <img class="main__buscar--icono" src="./imagenes/iconocarritodecompra.svg" alt="">
+    </div>
+</main> 
+<!--titulo--> 
+<h1>INGRESE SUS DATOS PARA CONTINUAR CON SU COMPRA</h1>
+<!--comienza formulario--> 
+<form id="compra" action="Findecompra">
+    <fieldset>
+       <legend>Metodo de pago</legend>
+            <br>
+           <label for="itarjet">Ingrese Numero de Tarjeta: </label>
+           <input id="itarjet" type="text"text name="tarjet"><br><br>
+
+           <label for="ifecha"> Fecha: </label>
+           <input id="ifecha" type="text"text name="fecha"><br><br>
+
+           <label for="ipassword" >Contraseña:</label>
+           <input id="ipassword" type="password" text name="password" required><br><br>
+        
+           <label for="iemail"> Correo: </label>
+           <input id="iemail" type="email"text name="email" required><br><br>
+
+           <label for="iphone">Telefono: </label>
+           <input id="iphone" type="text" text name="iphone"> <br><br>
+
+          <label class="checkbox" form="terminos"><input id="checkbox" type="checkbox" required>Acepto terminos y condiciones </label><br><br>
+
+          <input type="submit" value="PAGAR" id="boton">
+    </fieldset><br><br>
+</form> 
+<!--footer-->      
+</body>
+</html>
