@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(/Grupo-6/Proyecto-Grupo-6/imagenes/fondo.jpg);
+    background-image: url(/Grupo6/Proyecto-Grupo-6/imagenes/fondo.jpg);
 }
 
 /*Estilos del encabezado*/
@@ -14,8 +14,8 @@ body{
 /*Estilos del logo*/
 .container__logo--mod{
   margin: auto;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   display: block;
 }
 

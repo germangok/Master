@@ -1,0 +1,631 @@
+/*Estilos contenedor 1*/
+.container1{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    color: #013e66;
+    padding: 20px 20px;
+    border-radius: 20px;
+    grid-template-rows: repeat(2, auto);
+    font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+    background-image: url("/imagenes/fondo.jpg");
+}
+/*Estilos del header*/
+.container1__header--mod{
+    width: auto;
+    height: auto;
+    display: flex;
+    background: #e3f8ff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 25px;
+}
+/*Estilos del logo header*/
+.container1__logo--mod{
+    width: 200px;
+    height: 200px;
+}
+/*Estilos barra de navegacion header*/
+.container1__nav--mod{
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+/*Estilos de los enlaces*/
+.container1__links--mod{
+    font-size: 25px;
+    color: #013e66;
+    text-decoration: none;
+}
+/*Estilos de los enlaces al pasar el mouse*/
+.container1__links--mod:hover{
+    color: blue;
+}
+/*Estilos descripcion del proyecto*/
+.container1__descripcion--mod{
+    background: #e3f8ff;
+    text-align: justify;
+    padding: 10px;
+    font-size: 25px;
+}
+/*Fin de estilos contenedor 1*/
+
+/*Estilos contenedor 2*/
+.container2{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    color: #013e66;
+    padding: 20px 20px;
+    border-radius: 20px;
+    grid-template-rows: repeat(4, auto);
+    font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+    /*background-image: url("/imagenes/fondo.jpg");*/
+}
+/*Estilos del contenedor jose luis*/
+.container2__jose--mod{
+    text-align: justify;
+    padding: 10px;
+    font-size: 25px;
+    background: #e3f8ff;
+}
+/*Estilos del contenedor daniel alejandro*/
+.container2__daniel--mod{
+    text-align: justify;
+    padding: 10px;
+    font-size: 25px;
+    background: #e3f8ff;
+}
+/*Estilos del contenedor angel alejandro*/
+.container2__angel--mod{
+    text-align: justify;
+    padding: 10px;
+    font-size: 25px;
+    background: #e3f8ff;
+}
+/*Estilos de las fotos de perfil*/
+.container2__fotos--mod{
+    float: left;
+    width: 30%;
+    height: 100%;
+    margin-right: 10px;
+}
+/*Estilos de los titulos*/
+.container2__titulos--mod{
+    text-align: center;
+}
+/*Estilos del contenedor iconos redes sociales*/
+.redes{
+    display: flex;
+    justify-content: center;
+}
+/*Estilos de los iconos redes sociales*/
+.redes__iconos--mod{
+    width: 70%;
+    height: 90%;
+}
+/*Estilos del footer*/
+.container2__footer--mod{
+    width: auto;
+    height: auto;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    background: #e3f8ff;
+    justify-content: space-between;
+    padding: 10px;
+}
+/*Estilos del logo footer*/
+.container2__logo--mod{
+    width: 150px;
+    height: 150px;
+}
+/*Estilos de los titulos*/
+.container2__titulo--mod{
+    margin-left: auto;
+}
+/*Estilos del contenedor titulos footer*/
+.container2__div--mod{
+    text-align: center;
+}
+/*Estilos de la barra de navegacion footer*/
+.container2__nav--mod{
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+/*Estilos de los links*/
+.container2__links--mod{
+    font-size: 25px;
+    color: #013e66;
+    text-decoration: none;
+}
+/*Estilos de los links al pasar el mouse*/
+.container2__links--mod:hover{
+    color: blue;
+}
+/*Fin de estilos contenedor 2*/
+
+/*Visualizacion en computadoras*/
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+    /*Estilos contenedor 1*/
+    .container1{
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        color: #013e66;
+        padding: 20px 20px;
+        border-radius: 20px;
+        grid-template-rows: repeat(2, auto);
+        font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+        background-image: url("/imagenes/fondo.jpg");
+    }
+
+    .container1__header--mod{
+        width: auto;
+        height: auto;
+        display: flex;
+        background: #e3f8ff;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container1__logo--mod{
+        width: 200px;
+        height: 200px;
+    }
+
+    .container1__nav--mod{
+        width: 20%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container1__links--mod{
+        color: #013e66;
+        text-decoration: none;
+    }
+
+    .container1__links--mod:hover{
+        color: blue;
+    }
+
+    .container1__descripcion--mod{
+        background: #e3f8ff;
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+    }
+    /*Fin de estilos contenedor 1*/
+
+    /*Estilos contenedor 2*/
+    .container2{
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        color: #013e66;
+        padding: 20px 20px;
+        border-radius: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+        /*background-image: url("/imagenes/fondo.jpg");*/
+    }
+
+    .container2__jose--mod{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+        background: #e3f8ff;
+    }
+
+    .container2__daniel--mod{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+        background: #e3f8ff;
+    }
+
+    .container2__angel--mod{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+        background: #e3f8ff;
+    }
+
+    .container2__fotos--mod{
+        width: 100%;
+        height: auto;
+    }
+
+    .container2__titulos--mod{
+        text-align: center;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes__iconos--mod{
+        width: 70%;
+        height: 90%;
+    }
+
+    .container2__footer--mod{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: auto;
+        height: auto;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        background: #e3f8ff;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .container2__logo--mod{
+        width: 150px;
+        height: 150px;
+    }
+
+    .container2__titulo--mod{
+        margin-left: auto;
+    }
+
+    .container2__div--mod{
+        text-align: center;
+    }
+
+    .container2__nav--mod{
+        width: 20%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container2__links--mod{
+        color: #013e66;
+        text-decoration: none;
+    }
+
+    .container2__links--mod:hover{
+        color: blue;
+    }
+    /*Fin de estilos contenedor 2*/   
+}
+
+/*Visualizacion en tablets*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /*Estilos contenedor 1*/
+    .container1{
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        color: #013e66;
+        padding: 20px 20px;
+        border-radius: 20px;
+        grid-template-rows: repeat(2, auto);
+        font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+        background-image: url("/imagenes/fondo.jpg");
+    }
+
+    .container1__header--mod{
+        width: auto;
+        height: auto;
+        display: flex;
+        background: #e3f8ff;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container1__logo--mod{
+        width: 200px;
+        height: 200px;
+    }
+
+    .container1__nav--mod{
+        width: 20%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container1__links--mod{
+        color: #013e66;
+        text-decoration: none;
+    }
+
+    .container1__links--mod:hover{
+        color: blue;
+    }
+
+    .container1__descripcion--mod{
+        background: #e3f8ff;
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+    }
+    /*Fin de estilos contenedor 1*/
+
+    /*Estilos contenedor 2*/
+    .container2{
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        color: #013e66;
+        padding: 20px 20px;
+        border-radius: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+        /*background-image: url("/imagenes/fondo.jpg");*/
+    }
+
+    .container2__jose--mod{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+        background: #e3f8ff;
+    }
+
+    .container2__daniel--mod{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+        background: #e3f8ff;
+    }
+
+    .container2__angel--mod{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+        background: #e3f8ff;
+    }
+
+    .container2__fotos--mod{
+        float: left;
+        width: 30%;
+        height: 100%;
+        height: auto;
+    }
+
+    .container2__titulos--mod{
+        text-align: center;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes__iconos--mod{
+        width: 70%;
+        height: 90%;
+    }
+
+    .container2__footer--mod{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: auto;
+        height: auto;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        background: #e3f8ff;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .container2__logo--mod{
+        width: 150px;
+        height: 150px;
+    }
+
+    .container2__titulo--mod{
+        margin-left: auto;
+    }
+
+    .container2__div--mod{
+        text-align: center;
+    }
+
+    .container2__nav--mod{
+        width: 25%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container2__links--mod{
+        color: #013e66;
+        text-decoration: none;
+    }
+
+    .container2__links--mod:hover{
+        color: blue;
+    }
+    /*Fin de estilos contenedor 2*/
+}
+
+/*Visualizacion en celulares*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    /*Estilos contenedor 1*/
+    .container1{
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        color: #013e66;
+        padding: 20px 20px;
+        border-radius: 20px;
+        grid-template-rows: repeat(2, auto);
+        font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+        background-image: url("/imagenes/fondo.jpg");
+    }
+
+    .container1__header--mod{
+        width: auto;
+        height: auto;
+        display: flex;
+        background: #e3f8ff;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container1__logo--mod{
+        width: 200px;
+        height: 200px;
+    }
+
+    .container1__nav--mod{
+        width: 20%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container1__links--mod{
+        color: #013e66;
+        text-decoration: none;
+    }
+
+    .container1__links--mod:hover{
+        color: blue;
+    }
+
+    .container1__descripcion--mod{
+        background: #e3f8ff;
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+    }
+    /*Fin de estilos contenedor 1*/
+
+    /*Estilos contenedor 2*/
+    .container2{
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        color: #013e66;
+        padding: 20px 20px;
+        border-radius: 20px;
+        grid-template-rows: repeat(4, auto);
+        font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+        /*background-image: url("/imagenes/fondo.jpg");*/
+    }
+
+    .container2__jose--mod{
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+        background: #e3f8ff;
+    }
+
+    .container2__daniel--mod{
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+        background: #e3f8ff;
+    }
+
+    .container2__angel--mod{
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+        background: #e3f8ff;
+    }
+
+    .container2__fotos--mod{
+        float: left;
+        width: 30%;
+        height: 100%;
+        height: auto;
+    }
+
+    .container2__titulos--mod{
+        text-align: center;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes__iconos--mod{
+        width: 70%;
+        height: 90%;
+    }
+
+    .container2__footer--mod{
+        
+        width: auto;
+        height: auto;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        background: #e3f8ff;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .container2__logo--mod{
+        width: 150px;
+        height: 150px;
+    }
+
+    .container2__titulo--mod{
+        margin-left: auto;
+    }
+
+    .container2__div--mod{
+        text-align: center;
+    }
+
+    .container2__nav--mod{
+        width: 25%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container2__links--mod{
+        color: #013e66;
+        text-decoration: none;
+    }
+
+    .container2__links--mod:hover{
+        color: blue;
+    }
+    /*Fin de estilos contenedor 2*/
+}
