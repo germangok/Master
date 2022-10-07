@@ -1,0 +1,165 @@
+.container {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    color: #013e66;
+    border-radius: 10px;
+    background: #177c91;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(7, auto);
+    font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+}
+
+.container__header--mod {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: #e3f8ff;
+}
+
+.container__logo--mod {
+    widows: 200px;
+    height: 200px;
+}
+
+#titulo {
+    text-align: center;
+}
+
+.header__nav--mod {
+    display: flex;
+    gap: 15px;
+}
+
+.container__link--mod {
+    color: #013e66;
+    text-decoration: none;
+}
+
+.descripcion {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    font-size: 25px;
+    background: #e3f8ff;
+    border-radius: 10px;
+    font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+}
+
+.descripcion__texto--mod {
+    text-align: justify;
+}
+
+.descripcion__link--mod {
+    color: #013e66;
+    text-decoration: none;
+}
+
+.descripcion__link--mod:hover {
+    color: black;
+}
+
+#titulo1 {
+    color: white;
+    text-align: center;
+}
+
+.perfil {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    font-size: 25px;
+    text-align: justify;
+    background: #e3f8ff;
+    border-radius: 10px;
+    font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+}
+
+.perfil__foto--mod {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.perfil__mod--Alejandro {
+    display: flex;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    font-size: 25px;
+    text-align: justify;
+    background: #e3f8ff;
+    border-radius: 10px;
+    font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+}
+
+.perfil__foto--mod--Alejandro {
+    float: left;
+    width: 30%;
+    margin-right: 5px;
+}
+
+.perfil__parrafo--mod--Alejandro {
+    align-items: center;
+}
+
+.perfil__titulo--mod {
+    text-align: center;
+}
+
+.container__footer--mod {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: #e3f8ff;
+    font-family: Helvetica, Futura, Arial, Verdana, sans-serif;
+}
+
+.container__nav--mod {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container__link1--mod {
+    color: #013e66;
+    text-decoration: none;
+}
+
+.container__logo1--mod {
+    width: 100px;
+    height: 100px;
+}
+.fa-facebook:hover {
+    color:#efefef;
+}
+.fa-facebook {
+    padding: 5px;
+   
+    
+    
+}
+.facebook {
+    padding: 10px;
+    background: gray;
+    
+}
+
