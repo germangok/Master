@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/Grupo6/Proyecto-Grupo-6/css/style1.css" rel="stylesheet" />
+  <title>Registro</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="container__header--mod">
+      <a href="inicio.html" target="_blank">
+      <img class="container__logo--mod" src="/Grupo6/Proyecto-Grupo-6/imagenes/logo2.png" alt="/ logo"/>
+    </a>
+    </header>
+    <br>
+    <h2 class="container__title--mod">Registro de Usuarios</h2>
+    <form id="form" name="form" method="post">
+      <div class="container__div">
+        <label class="container__lab--mod" for="user">Nombre de Usuario</label>
+        <input class="container__input--mod" type="text" id="user" name="user" required="true" />
+      </div>
+      <div class="container__div">
+        <label class="container__lab--mod" for="user">Correo Electronico</label>
+        <input class="container__input--mod" type="email" id="email" name="email" required="true" />
+      </div>
+      <div class="container__div">
+        <label class="container__lab--mod" for="password">Contraseña</label>
+        <input class="container__input--mod" type="password" id="password" name="password" required="true" />
+      </div>
+      <div class="container__div">
+        <label class="container__lab--mod" for="password">Confirmar Contraseña</label>
+        <input class="container__input--mod" type="password" id="password-1" name="password" required="true" />
+      </div>
+      <div class="container__div">
+        <input class="container__input--mod" type="submit" value="Registrarse">
+      </div>
+      <p class="container__txt--mod">
+        ¿Ya estas registrado? <a class="container__link--mod" href="login.html">Inicia Sesion</a>
+      </p>
+    </form>
+  </div>
+</body>
+
+</html>

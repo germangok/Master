@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    color: #091133;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas: "nav" "content" "footer";
+    min-height: 100vh;
+}
+
+
+/*-------Nav logo-------*/
+
+.logo {
+    width: 100%;
+}
+
+.logo_p {
+    width: 80%;
+    margin-left: 10px;
+}
+
+
+/*----------Nav-----------*/
+
+.nav-div {
+    background-color: #0769e9;
+}
+
+.nav {
+    color: #fff;
+    display: grid;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    gap: 2em;
+    align-items: center;
+    height: 90px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.nav__item {
+    margin: 5px;
+    padding: 5px;
+}
+
+.nav__item:hover {
+    background-color: #4284db;
+    border-radius: 3.5px;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav__menu {
+    display: none;
+}
+
+.nav__icon {
+    width: 30px;
+}
+
+
+/*Hero main*/
+
+.hero__main {
+    grid-area: content;
+    display: grid;
+    gap: 2em;
+    /*Columnas dinamicamente*/
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 180px;
+    align-items: center;
+}
+
+.hero__waves {
+    grid-area: content;
+    align-self: end;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.hero__subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+/*-----Boton ingresar-----*/
+
+.hero__cta {
+    text-decoration: none;
+    color: #091133;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.hero__cta:hover {
+    background-color: #091133;
+    color: #fff;
+}
+
+
+/*------Boton registrarse*/
+
+.hero__r {
+    background-color: #7DC9A5;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.hero__r:hover {
+    background-color: #fff;
+    color: #091133;
+}
+
+
+/*-----Imagen------*/
+
+.hero__img {
+    width: 100%;
+}
+
+
+/*-------Footer-------*/
+
+.footer-div {
+    gap: 1em;
+    background-color: #0769e9;
+    color: #fff;
+}
+
+.footer {
+    grid-area: footer;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    color: #fff;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;
+    height: 90px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.footer__list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__redes {
+    display: flex;
+    display: inline-block;
+    margin-left: 40%;
+}
+
+.footer_img {
+    width: 12%;
+    margin: 15px;
+}
+
+
+/*Media queries*/
+
+@media (max-width:800px) {
+    /*Desaparece la lista*/
+    .nav__list {
+        display: none;
+    }
+    .nav__menu {
+        display: block;
+    }
+    /*Cambia el hero a una solo columna centrada*/
+    .hero__main {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        text-align: center;
+    }
+    /*La imagen ocupa de la 1 a la segunda columna*/
+    .hero__picture {
+        grid-row: 1/2;
+    }
+    /*Tamaño de la imagen teniendo un comportamiento de bloque*/
+    .hero__img {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+}
