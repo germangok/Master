@@ -175,6 +175,17 @@ footer{
 .okboton{
     display: flex;
 }
+/*--------------------------------*/
+/* CSS DE COMPRA EXITOSA          */
+/*--------------------------------*/
+.exitoso{
+    color: red;
+    text-align: center;
+}
+.cancelado{
+    color: black;
+    text-align: center; 
+}
 /* -------------------------------*/
 /* CSS DE CATALOGOS               */
 /*--------------------------------*/
