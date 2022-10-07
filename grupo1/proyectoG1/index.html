@@ -5,145 +5,223 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agrocog Colombia</title>
-    <link rel="stylesheet" href="stylepg1.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" href="mediapg1/logoico.ico" type="image/x-icon" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="headercontainer">
-          <div class="header__logo">
-            <a href="#descripcion">
-              <img
-                src="mediapg1/Logo1.png"
-                width="72"
-                height="73"
-                alt="Este es mi logo"
-            /></a>
-            <h1>AGROCOG COLOMBIA</h1>
+    <!-------------------Header (Logo, titulo, barra de busqueda, Iconos y navegacion)-------------->
+    <header class="header">
+        <div class="header__container">
+          <a href="#">
+            <img
+              class="header__logo"
+              src="mediapg1/Logo1.png"
+              alt="Este es mi logo"/></a>
+          <div class="header_titulo">
+            <a href=""><h1>AGROCOG COLOMBIA</h1></a>
           </div>
-          <div class="searchcontainer">
+              <!----------------------- barra de busqueda ------------------------------->
+          <div class="header__search">
             <input
               class="search__input"
               type="text"
-              placeholder="¿Que estas buscando?"
-            />
-            <div class="btn">
-              <i class="fa fa-search"></i>
-            </div>
+              placeholder="¿Que estas buscando?"/>
           </div>
           <div>
+            <!------------------------- Iconos --------------------------------->
             <ul class="iconocontainer">
-              <li class="icono icono1">
+              <li>
                 <a href=""
                   ><img
-                    class="icono icono2"
+                  class="icono icono1_carrito"
                     src="mediapg1/carrito.png"
                     alt="carrito de compra"
                 /></a>
               </li>
               <li>
-                <a href=""><img src="mediapg1/Micuenta.png" alt="Micuenta"/></a>
+                <a href="./Tablas/Inicio.html"
+                  ><img  class="icono icono2_cuenta" 
+                  src="mediapg1/Micuenta.png" alt="Micuenta"/></a>
               </li>
             </ul>
           </div>
         </div>
+           <!-------------------------- Navegacion  ------------------------------------>
         <nav class="navcontainer">
           <ul class="nav__main">
-            <li class="nav-main_item">
-              <a href=""><img src="mediapg1/categorias.png" alt="Micuenta" /></a>
+            <!-- <li class="nav__main_item item_categorias">
+              <a href=""><img src="mediapg1/categorias.png" alt="Micuenta"/></a> -->
             </li>
-            <li class="nav-main_item"><a href="">Ofertas</a></li>
-            <li class="nav-main_item"><a href="">Catalogo</a></li>
-            <li class="nav-main_item"><a href="">Servicios</a></li>
-            <li class="nav-main_item"><a href="http://127.0.0.1:5500/grupo1/grupo1.html">G1</a></li>
+            <li class="nav_main_item item_ofertas"><a href="#ofertas">Ofertas</a></li>
+            <li class="nav_main_item item_catalogo"><a href="#productos">Catalogo</a></li>
+            <li class="nav_main_item item_servicios"><a href="#actualidad">Servicios</a></li>
           </ul>
         </nav>
-      </header>
-      <section id="descripcion" class="descripcion">
-        <h1>AGROCOG COLOMBIA</h1>
+    </header>
+    <!-- -----------------------------------MAIN----------------------------------------------- -->
+    <main class="main__container">
+      <!-------------- Seccion 1 imagen y nombre de la empresa----------------------------------------->
+      <section id="title" class="empresa">
+        <div class="empresa_img"></div>
+        <div class="empresa_titulo">
+        <a href=""><h1>AGROCOG COLOMBIA</h1></a>
+        </div>
+      </div>
       </section>
-      <section class="cardscontainer">
-          <div class="cards card1">
-            <div class="line"></div>
-            <h2>CARNES</h2>
-            <a href="#"><img src="./mediapg1/carne.png" alt="Carnes" /></a>
-            <a href="#ifinal"><button>Ir</button></a>
+      <!----------------Seccion 2 (cuatro productos: Carnes,lacteos,carnicos, frutas y verduras)------->
+      <section class="productos">
+        <div id="productos" class="productos__container">
+          <div class="productos_cards card_carnes">
+            <a href="#">
+            <h3 class="productos__titulo titulo_carnes">CARNES</h3></a>
+            <button class="productos_button button1"><a href="#ifinal"><h2>Ir</h2></a>
+              <img src="./mediapg1/Video.png" alt=""></button>
+          </div>
+          <div class="productos_cards card_lacteos">
+            <a href="#"><h3 class="productos__titulo titulo_lacteos">LACTEOS</h3></a>
+            <button class="productos_button button2"><a href="#ifinal"><h2>Ir</h2></a>
+              <img src="./mediapg1/Video.png" alt=""></button>
+          </div>
+          <div class="productos_cards card_carnicos">
+            <a href="#"><h3 class="productos__titulo titulo_carnicos">CARNICOS</h3></a>
+            <button class="productos_button button3"><a href="#ifinal"><h2>Ir</h2></a>
+              <img src="./mediapg1/Video.png" alt=""></button>
             </div>
-          <div class="cards card2">
-            <h2 class="inicio_l-h2">LACTEOS</h2>
-            <a href="#"><img src="./mediapg1/lacteos.png" alt="Lacteos" /></a>
-            <a href="#ifinal"><button>Ir</button></a>
-          </div>
-          <div class="cards card3">
-            <h2 class="inicio_ca-h2">CARNICOS</h2>
-            <a href="#"><img src="./mediapg1/carnicos.png" alt="Carnicos" /></a>
-            <a href="#ifinal"><button>Ir</button></a>
-          </div>
-          <div class="cards card4">
-            <h2 class="inicio_f-h2">FRUTAS Y VERDURAS</h2>
-            <a href="#"><img src="./mediapg1/frutas-y-verduras.png" alt="Frutas y Verduras" /></a>
-            <a href="#ifinal"><button>Ir</button></a>
-          </div>
-      
-      </section>
-      <section class="ofertascontainer">
-        <div class="container">
-          <div class="line"></div>
-          <div>
-            <img src="./mediapg1/oferta.png" alt="">
-          </div>
-          <div>
-            <p>Lunes de Carnes</p><h3>10%</h3>
-            <img src="" alt="">
-            <p>Martes de frutas</p><h3>30%</h3>
-            <img src="" alt="">
-            <p>Miercoles de Verduras</p><h3>20%</h3>
-            <img src="" alt="">
+          <div class="productos_cards card_frutas">
+            <a href="#"><h3 class="productos__titulo titulo_frutas">FRUTAS Y VERDURAS</h3></a>
+            <button class="productos_button button4"><a href="#ifinal"><h2>Ir</h2></a>
+            <img src="./mediapg1/Video.png" alt=""></button>
           </div>
         </div>
       </section>
-      <div><img src="./mediapg1/linea1.png" alt=""> </div>
-      <section class="actualidadcontainer">
-        <div class="content">
-        <h2>ACTUALIDAD</h2>
-        <div class="content actulidad"> 
-       <p>Noticias</p>
-       <p>Nuestros aliados</p>
-       <p>Comunidades C.</p>
-       <p>Oportunidades</p>
-      </div>
-      <div class="content multimedia">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/OQng5VakPS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
+      <!---------------------Seccion 3 ofertas (tres productos en oferta: carnes, frutas, verduras)--->
+      <section class="ofertas">
+        <div id="ofertas" class="ofertas__container">
+          <div class="line"></div>
+          <div class="ofertas__img">
+            <!-- <img src="./mediapg1/oferta.png" alt="" width="414px"/> -->
+          </div>
+             <div class="ofertas_cards ofertas_carnes">
+                <h2 class="ofertas_titulo titulo_carnes">Lunes de Carnes</h2>
+                <h1 class="ofertas_numero numero_carnes">10%</h1>
+            </div>
+             <div class="ofertas_cards ofertas_frutas">
+                <h2 class="ofertas_titulo titulo_frutas">Martes de frutas</h2>
+                <h1 class="ofertas_numero numero_frutas">30%</h1>
+            </div>
+             <div class="ofertas_cards ofertas_verduras">
+               <h2 class="ofertas_titulo titulo_verduras">Miercoles de Verduras</h2>
+               <h1 class="ofertas_numero numero_verduras">20%</h1>
+            </div>
+        </div>
       </section>
-      <div><img src="./mediapg1/linea2.png" alt=""> </div>
-    </div>
+      <!--------------linea estilo flecha hacia abajo------------->
+      <div class="linea__abajo"></div>
+          <!-------------------------Seccion 4 actualidad y multimedia------------------------------->
+      <section class="actualidad_multimedia">
+        <div id="actualidad" class="actualidad_multimedia__container">
+          <div class="actualidad__titulo titulo_actumulti">
+            <h2>ACTUALIDAD</h2>
+          </div>
+          <div class="actualidad__contenido">
+            <h2 class="actualidad__subtitulos subtitulo1">Noticias</h2>
+            <h2 class="actualidad__subtitulos subtitulo2">Nuestros aliados</h2>
+            <h2 class="actualidad__subtitulos subtitulo3">Comunidades C.</h2>
+            <h2 class="actualidad__subtitulos subtitulo4">Oportunidades</h2>
+
+          </div>
+       
+          <div class="multimedia">
+            <div class="multimedia__titulo titulo_actumulti">
+              <h2>MULTIMEDIA</h2>
+            </div>
+            <iframe
+              class="multimedia_video"
+              src="https://www.youtube.com/embed/OQng5VakPS8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="botones">
+            <button class="productos_button button3"><a href="#ifinal"></a>
+              <img src="./mediapg1/Video.png" alt=""></button>
+              <button class="productos_button button3"><a href="#ifinal"></a>
+                <img src="./mediapg1/Video.png" alt=""></button>
+                <button class="productos_button button3"><a href="#ifinal"></a>
+                  <img src="./mediapg1/Video.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----------------------------linea estilo flecha hacia arriba---------------------------------->
+      <div class="linea__arriba"></div>
+    </main>
+    <!--------------------------------------------footer---------------------------------------------------->
     <footer>
-      <div class="footercontainer">
-        <div class="texto">
-          <div class="texto texto1">
-            <p>Preguntas frecuentes </p>
+      <div class="footer__container">
+          <div class="footer_preguntas texto">
+            <p>Preguntas frecuentes</p>
             <p>Portal de colaboradores</p>
             <p>Novedades</p>
           </div>
-          <div class="texto texto2" >
+          <div class="footer_derechos texto">
             <p>Federeción nacional de agricultores 2022</p>
-            <p>Todos los derechos reservados </p>
+            <p>Todos los derechos reservados</p>
           </div>
-        </div>
-        <div class="texto logo">
+          <!-- Texto de contacto  -->
+          <div class="footer_contacto texto">
+            <a href="#">
+              <img class="footer_telefono footer_emogi" src="mediapg1/telefono.png"
+                alt="facebook"/></a>
+                <div class="footer_contacto_texto">
+            <p>Linea servicio al cliente</p>
+            <p>01800.000.00</p>
+          </div>
+          </div>
+          <!-- Texto de agricultores  -->
+          <div class="footer_agriculores texto">
+            <p>comitè de agricultores: Cl 7 3-55</p>
+            <p>Ciudad-Departamento</p>
+            <p>Tel: 88888888888</p>
+          </div>
+          <!-- Emogis de las redes sociales -->
+        <div class="footer_logo">
           <div class="logo">
             <a href="#descripcion">
-              <img src="mediapg1/Logo1.png" width="152" height="139" alt="Este es mi logo"/></a>
+              <img
+              class="footerlogo"
+                src="mediapg1/Logo1.png"
+                alt="Este es mi logo"
+            /></a>
           </div>
-          <div></div><div></div>
-          <div></div>
-        </div>
-        <div class="texto info">
-          <div></div>
-          <div></div>
+            <div class="footer_emogis">
+               <div class="footer__facebook">
+                <a href="#">
+                  <img class="footer_facebook footer_emogi" src="mediapg1/Facebook.png"
+                    alt="facebook"/></a>
+              </div>
+              <div class="footer__twiter">
+                <a href="#">
+                  <img class="footer_twiter footer_emogi" src="mediapg1/Twitter.png"
+                    alt="Twitter"/></a>
+              </div>
+              <div class="footer__instagram">
+                <a href="#">
+                  <img class="footer_instagram footer_emogi" src="mediapg1/Instagram.png"
+                    alt="instagram"/></a>
+              </div>
+              <div class="footer__youtube">
+                <a href="#">
+                  <img class="footer_youtube footer_emogi" src="mediapg1/Youtube.png"
+                    alt="instagram"/></a>
+              </div>
+          </div>
+          <div class="footer_sucribase"><h3>Suscribase</h3></div>
+          <div class="footer_linea"></div>
+          </div>
+        
+          
         </div>
       </div>
     </footer>
