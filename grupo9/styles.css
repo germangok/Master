@@ -84,6 +84,7 @@ span {
     border: 1px solid #0500FF;
     border-radius: 10px;
     margin-bottom: 15px;
+
 }
 .rectangulo {
     margin-top: 16px;
@@ -119,7 +120,7 @@ span {
     line-height: 20px;
     text-align: justify;
     color: #FFFFFF;
-    height: 25vh;
+    height: 45vh;
 }
 /* el separador */
 .separador {
