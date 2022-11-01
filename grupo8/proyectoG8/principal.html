@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodRestaurant</title>
     <link rel="stylesheet" href="principal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
 <!--comienza header-->    
@@ -14,7 +15,7 @@
 </header>
 <!--comienza cuerpo del proyecto--> 
 <main >
-    <div class="main__buscar">
+    <div class="main__buscar  container d-flex justify-content-around">
         <img class="main__buscar--icono" src="./imagenes/iconomenu.svg" alt="">
         <div class="contenedor--barradebusqueda">
             <input class="main__buscar--input"type="text" placeholder="Buscar" >
@@ -23,16 +24,16 @@
     </div>
 
 <!--comienza contenido de alimentos--> 
-    <section class="main__contenedor">
-        <h2> ALIMENTOS</h2>
-        <div class="main__contenedor--platos">
-            <div class="main__contendor--contenido">
-                <h3> LANGOSTA GRATINADA</h3>
-                <div class="main__contenedor--comidas">
+    <section class=" border">
+        <div class="text-center "><h2> ALIMENTOS</h2></div>
+        <div class=" container m-5 row ">
+            <div class=" bg-light col-sm-12 col-md-6 col-lg-4 text-center ">
+                <h3 class=""> LANGOSTA GRATINADA</h3>
+                <div class="main__contenedor--comidas " >
                     <img src="./imagenes/plato1.png" alt=""> 
-                    <div class="main__contenedor--comidasdescripción">
-                        <h4>Descripción del plato</h4>
-                        <p> Langosta al carbon, con queso mozzarella, ensalada cesar y papa frita </p>
+                    <div >
+                        <h4 >Descripción del plato</h4>
+                        <p  > Langosta al carbon, con queso mozzarella, ensalada cesar y papa frita </p>
                         <p> $35.000 </p>
                     </div>  
                 </div>
@@ -40,9 +41,9 @@
                     <button>Comprar </button>
                 </div> 
             </div>
-            <div class="main__contendor--contenido">
-                <h3> ARROZ CAMARON</h3>
-                <div class="main__contenedor--comidas">
+            <div class=" bg-light col-sm-12 col-md-6 col-lg-4 text-center">
+                <h3> ARROZ  DE CAMARONES</h3>
+                <div class="main__contenedor--comidas ">
                     <img src="./imagenes/plato2.png" alt="">
                     <div class="main__contenedor--comidasdescripción">
                         <h4>Descripción del plato</h4>
@@ -54,7 +55,7 @@
                     <button>Comprar </button>     
                 </div>  
             </div>        
-            <div class="main__contendor--contenido">
+            <div class=" bg-light col-sm-12 col-md-6 col-lg-4  text-center">
                 <h3> CAZUELA DE MARISCOS</h3>
                 <div class="main__contenedor--comidas">
                     <img src="./imagenes/plato3.png" alt="">   
@@ -72,10 +73,10 @@
         </div>
     </section>
     <!--comienza contenido de bebidas--> 
-    <section class="main__contenedor">
-        <h2>BEBIDAS</h2>
-        <div class="main__contenedor--platos">
-            <div class="main__contendor--contenido">
+    <section class="border">
+        <h2 class=" text-center ">BEBIDAS</h2>
+        <div class="container m-5 row">
+            <div class="bg-light col-sm-12 col-md-6 col-lg-4 text-center">
             <h3> JUGOS NATURALES</h3>
             <div class="main__contenedor--comidas">
                  <img src="./imagenes/bebida1.png" alt=""> 
@@ -89,8 +90,8 @@
                 <button>Comprar </button>
             </div> 
             </div>    
-            <div class="main__contendor--contenido">
-                <h3>PIÑA COLADA</h3>
+            <div class="bg-light col-sm-12 col-md-6 col-lg-4 text-center">
+                <h3 class="text-center">PIÑA COLADA</h3>
                 <div class="main__contenedor--comidas">
                      <img src="./imagenes/bebida2.jpg" alt=""> 
                     <div class="main__contenedor--comidasdescripción">
@@ -104,8 +105,8 @@
                     <button>Comprar </button>
                 </div>
             </div>   
-            <div class="main__contendor--contenido">
-                <h3>COCTELERIA</h3>
+            <div class="bg-light col-sm-12 col-md-6 col-lg-4 text-center">
+                <h3 class="text-center">COCTELERIA</h3>
                 <div class="main__contenedor--comidas">
                      <img src="./imagenes/bebida3.jpg" alt=""> 
                     <div class="main__contenedor--comidasdescripción">
@@ -122,10 +123,10 @@
         </div>
     </section>
     <!--comienza contenido de postres--> 
-    <section class="main__contenedor">
-        <h2>POSTRES</h2>
-        <div class="main__contenedor--platos">
-            <div class="main__contendor--contenido">
+    <section class="border">
+        <h2 class="text-center">POSTRES</h2>
+        <div class="container m-5 row">
+            <div class="bg-light col-sm-12 col-md-6 col-lg-4  text-center">
             <h3> DULCES DE LA CASA</h3>
             <div class="main__contenedor--comidas">
                  <img src="./imagenes/postre1.png" alt=""> 
@@ -139,7 +140,7 @@
                 <button>Comprar </button>
             </div> 
             </div>    
-            <div class="main__contendor--contenido">
+            <div class="bg-light col-sm-12 col-md-6 col-lg-4  text-center">
                 <h3>POSTRES CREMOSOS</h3>
                 <div class="main__contenedor--comidas">
                      <img src="./imagenes/postre2.png" alt=""> 
@@ -153,7 +154,7 @@
                     <button>Comprar </button>
                 </div>
             </div>   
-            <div class="main__contendor--contenido">
+            <div class="bg-light col-sm-12 col-md-6 col-lg-4  text-center">
                 <h3>TORTAS</h3>
                 <div class="main__contenedor--comidas">
                     <img src="./imagenes/postre3.jpg" alt=""> 
