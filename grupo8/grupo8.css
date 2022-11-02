@@ -22,28 +22,28 @@ header p{
     position: relative;
     text-shadow: 0 4px 4px gray;
     text-align: center;
-    top: 35%;
+    top: 25%;
     
 }  
-
-header nav {
+/*
+header .nav {
     display: block;
     position: relative;
     text-align: right;
-    top: 85%;
+    margin-top: 20%;
+    font-size: 15px;
 
-}
+}/*
 header nav a {
-    padding: 5px;
-    text-decoration: none;
+    padding: 2px;
+    margin-right: 2%;
     font-size: 15px;
     font-family: fantasy;
-    margin-top: -10%;
-    color: rgb(0, 0, 0);
+    margin: 2px;
     font-size: 1.2rem;
     position: relative;
-    text-shadow: 0 4px 4px gray;
-}
+    
+}*/
 
 /*Empieza cuerpo*/
 body{
@@ -53,6 +53,7 @@ body{
     background-size: cover;
 
 }
+/*
 .main__seccion1{
     display: block;
     background-color: #95b8f6;
@@ -89,18 +90,19 @@ h3{
 .main__perfiles--contenido h4{
     font-size: 20px;
     margin-left: 2%;
-}
-.main__perfiles--contenido img{
+}*/
+
+.main__perfiles img{
     float: left;
-    width: 25%;
-    padding: 15px;
+    width: 50%;
+    
     
 }
-.main__perfiles--contenido p{
+/*.main__perfiles--contenido p{
     font-size: 17px;
     margin-top: 2%;
     padding:5%;
-}
+}*/
 /*comienza footer*/
 .footer  {
     width: 100%;
@@ -118,9 +120,9 @@ footer ul{
 }
 footer ul li{
     display: block;
-    margin-top: 10px;
+    margin-top: -15px;
     top: -20%;
-}
+}/*
 footer nav {
     display: block;
     text-align: right;
@@ -139,9 +141,9 @@ footer nav a {
     text-shadow: 0 4px 4px gray;
     
 }
-
+*/
 /*dispositivo mediano*/
-
+/*
 @media (min-width:520px){
     .main__perfiles{
         display:flex;
@@ -154,10 +156,10 @@ footer nav a {
         text-align: center;  
         
     }
-}
+}/*
 /*dispositivo grande*/
 @media (min-width:900px){
-    .main__perfiles{
+   /* .main__perfiles{
         display:flex;
         flex-wrap: wrap;
         align-content: center; 
@@ -167,7 +169,7 @@ footer nav a {
         width: 30%;
         text-align: center;  
         
-    }
+    }*/
     header{
         width: 100%;
         height: 500px;
@@ -176,4 +178,4 @@ footer nav a {
         font-size: 23px;
         text-align: justify;
         top: 50%;} 
-    } 
+    } /*

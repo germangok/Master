@@ -4,7 +4,8 @@ CSS<br>
 METODOLOGIA BEM<br>
 GRID<br>
 FLEX<br>
-RESPONSIVE <br><br>
+RESPONSIVE <br>
+Implementacion de Bootstrap 5.2<br><br>
 Presenta:<br>
 Bedoya Ramos Alejandro<br>
 Elles Ramos Doris<br>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodRestaurant</title>
     <link rel="stylesheet" href="grupo8.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
@@ -13,17 +14,23 @@
     <header>
 
         <p>"Tan cerca como estar en el mar"</p>
-        <nav style="border:1px;">
-            <a href="">PORTAL</a>
-            <a href="./index.html">PROYECTO</a>
-        </nav>
+        <ul class="nav justify-content-end text-dark ">
+            <li class="nav-item">
+              <a class="nav-link active text-dark border bg-dark p-2 text-white bg-opacity-75 " aria-current="page" href="#">PORTAL</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link active text-dark border bg-dark p-2 text-white bg-opacity-75  "href="/proyectoG8/principal.html">PROYECTO</a>
+            </li>
+           
+        </ul>
+        
     </header>
 <!--comienza main-->     
     <main>
 <!--comienza contenido descripción proyecto-->         
-    <div class="main__seccion1">
-        <h4> Descripción del proyecto </h4>
-        <p>En el grupo 8 enfocamos la página hacia la gastronomía, específicamente la comida de Mar, tales
+    <div class="container ">
+        <h4 class="text-center border text-light text-primary text-opacity-75  "> DESCRIPCIÓN DEL PROYECTO </h4>
+        <p class=" text-center  bg-light p-2 text-dark bg-opacity-25">En el grupo 8 enfocamos la página hacia la gastronomía, específicamente la comida de Mar, tales
             como los mariscos y pescados en sus diferentes presentaciones. La idea surgió debido a que
             contamos con compañeros de la Costa los cuales tienen un acercamiento a la zona, además de
             contar con diferentes ideas acerca de este tipo de alimentos, lo cual nos favorecerá y nos hará tener
@@ -33,10 +40,10 @@
             nos encuentre, gracias a las técnicas como el posicionamiento SEO o el posicionamiento SEM. </p>
     </div>
 <!--comienza perfiles-->     
-    <div><h3> PERFILES GRUPO 8 </h3></div>
-   <div class="main__perfiles">
-        <div class="main__perfiles--contenido"> 
-            <h4>Alejandro Bedoya Ramos</h4>
+    <div class="text-center  text-primary text-opacity-75  text-light"><h3> PERFILES GRUPO 8 </h3></div>
+   <div class="main__perfiles container m-1 row  ">
+        <div class="col-sm-12 col-md-6 col-lg-4 text-center text-white border"> 
+            <h4 class="text-dark border bg-light">Alejandro Bedoya Ramos</h4>
             <img src="./img/alejo.jpg" alt="">
             <p>Jose Alejandro Bedoya Ramos<br>
                 Edad : 17 años <br>
@@ -48,8 +55,8 @@
                 Encargado de pagina de inicio, registro, cierre y bebidas pagina principal
             </p>
         </div>     
-        <div class="main__perfiles--contenido"> 
-            <h4>Doris Esther Elles Ramos</h4>
+        <div class="col-sm-12 col-md-6 col-lg-4 text-center text-white border"> 
+            <h4 class="text-dark border bg-light">Doris Esther Elles Ramos</h4>
             <img src="./img/der.jpg">
             <p>Doris Esther Elles Ramos <br>
                 Edad: 38 años <br>
@@ -60,8 +67,8 @@
                 Encargada de Footer, pagina de ubicación y carrito de compras
             </p>
         </div>
-        <div class="main__perfiles--contenido"> 
-            <h4>Felipe Sánchez Castillo</h4>
+        <div class="col-sm-12 col-md-6 col-lg-4 text-center text-white border"> 
+            <h4 class="text-dark border bg-light">Felipe Sánchez Castillo</h4>
             <img src="./img/felipe.jpg" alt="">
             <p> Manuel Felipe Sánchez Castillo <br>
                 Edad : 25 años <br>
@@ -78,18 +85,22 @@
     </main>
 <!--comienza footer-->     
     <footer class="footer">
-        
-         <ul>
+         <ul class="content-end text-dark " >
             <li><p>Dirección:Cra 3 este #22 B -03</p></li> 
             <li><p>cajica, Cundinamarca</p></li>
             <li><p>Telefono: 3138452372 </p></li>
             <li><p>Terminos y condiciones</p></li>
         </ul>
-        <nav style="border:1px;">
-                <a href="./index.html">PORTAL</a>
-                <a href="./proyectoG8/index.html">PROYECTO</a>
-        </nav>
-    
+        
+        <ul class="nav justify-content-end text-dark ">
+            <li class="nav-item">
+              <a class="nav-link active text-dark border bg-dark p-2 text-white bg-opacity-75 " aria-current="page" href="#">PORTAL</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link active text-dark border bg-dark p-2 text-white bg-opacity-75  "href="./index.html">PROYECTO</a>
+            </li>
+           
+        </ul>
     </footer>
 
 </body>
