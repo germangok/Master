@@ -1,114 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <title>Pagina de bienvenida</title>
-  </head>
-  <body>
-    <div class="container1">
-      <header class="container1__header--mod">
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/scss/custom.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <title>Colores</title>
+</head>
+
+<body>
+  <!--contenedor principal-->
+  <main class="container-fluid p-3 border" style="background-image: url('imagenes/fondo.jpg')">
+    <!--Encabezado-->
+    <header class="row m-auto p-3 bg bg-info rounded-3">
+      <div class="col-sm-4 text-center">
         <a href="Proyecto-Grupo-6/inicio.html" target="_blank">
-          <img
-            class="container1__logo--mod"
-            src="imagenes/logo.png"
-            alt="tienda"
-          />
+          <img src="imagenes/logo1.png" class="img-fluid max-width: 100%; height: auto%;" alt="Responsive image" />
         </a>
-        <h1 class="container1__titulo--mod">E-commer-tech</h1>
-        <nav class="container__nav--mod">
-          <a class="container1__links--mod" href="../default.html">Portal</a>
-          <a class="container1__links--mod" href="#desarrolladores"
-            >Desarrolladores</a
-          >
+      </div>
+      <div class="col-sm-4 d-flex align-items-center justify-content-center">
+        <h2>E-commertech</h2>
+      </div>
+      <div class="col-sm-4 d-flex align-items-center justify-content-center">
+        <nav class="navbar navbar-light">
+          <a class="navbar-brand m-auto link-primary" href="#desarrolladores">Desarrolladores</a>
         </nav>
-      </header>
-      <div class="container1__descripcion--mod">
-        <p>
-          Nuestro proyecto se basa en la construccion de una pagina de tipo
-          e-commerce la cual tiene una pagina de bienvenida y 3 formularios uno
-          para el registro, otro para el inicio de sesion y el ultimo para que
-          los visitantes y usuarios registrados del sitio dejen sus comentarios
-          con el fin de recibir feedback y mejorar el sitio.
-        </p>
+      </div>
+    </header>
+    <!--fin encabezado-->
+    <br />
+    <!--descripcion del proyecto-->
+    <div class="row p-3 m-auto text-justify bg bg-info rounded-3">
+      <section>
+        <h2 class="text-center">Descripcion del proyecto</h2>
         <br />
-        <a class="container1__links--mod" href="Proyecto-Grupo-6/catalogo.html">Conoce nuestro proyecto aqui</a>
-      </div>
-      <h1 id="titulo">Perfiles Grupo 6</h1>
-      <div class="container2">
-        <div id="desarrolladores" class="container2__jose--mod">
-            <img class="container2__fotos--mod" src="imagenes/jose.jpg" alt="jose" />
-            <h2 class="container2__titulos--mod"">Jose Luis Campo</h2>
-            <p>
-                Hola!!!...soy la persona encargada de desarrollar la pagina de bienvenida, y los formularios de inicio
-                de sesion y de contacto. Pongo a disposicion de mi equipo de trabajo mi experiencia y conocimientos
-                para contribuir al crecimiento del proyecto.<br><br>
-                <h2 class=" container2__titulos--mod">mis redes sociales</h2>
-                <div class="redes">
-                    <a class="" href="https://www.linkedin.com/in/jlcampo92" target="_blank">
-                        <img class="redes__iconos--mod" src="imagenes/linkedin.png" alt="linkedin" />
-                    </a><br>
-                    <a class="" href="https://github.com/josel36" target="_blank">
-                        <img class="redes__iconos--mod" src="imagenes/github.png" alt="github" />
-                    </a>
-                </div>
-            </p>
-        </div>
-        <div id="desarrolladores" class="container2__daniel--mod">
-            <img class="container2__fotos--mod" src="imagenes/daniel.jpeg" alt="daniel" />
-            <h2 class="container2__titulos--mod"">Daniel Alejandro Diaz</h2>
-            <p>
-                Hola, soy Daniel Diaz, encargado de la parte Formulario de contacto para recibir cualquier sugerencia, y
-                me gusta aportar ideas  a mis compañeros para mejoramiento de la página<br><br>
-                <h2 class=" container2__titulos--mod">mis redes sociales</h2>
-                <div class="redes">
-                    <a class="container__links--mod" href="https://www.facebook.com/danieldiazmor/" target="_blank">
-                        <img class="redes__iconos--mod" src="imagenes/facebook.png" alt="facebook" />
-                    </a><br>
-                    <a class="container__links--mod" href="https://www.instagram.com/daniel_alejandro_diiiaz/" target="_blank">
-                        <img class="redes__iconos--mod" src="imagenes/instagram.png" alt="instagram" />
-                    </a>
-                </div>
-            </p>
-        </div>
-        <div id="desarrolladores" class="container2__angel--mod">
-            <img class="container2__fotos--mod" src="imagenes/alejandro.jpeg" alt="angel" />
-            <h2 class="container2__titulos--mod"">Angel Alejandro Duran</h2>
-            <p>
-                Soy el encargado de la parte del backend del grupo, y responsable del inicio y catalogo del proyecto
-                en la parte del fronted.<br><br><br><br>
-                <h2 class=" container2__titulos--mod">mis redes sociales</h2>
-                <div class="redes">
-                    <a class="container__links--mod" href="https://www.linkedin.com/in/angel-alejandro-duran-pulido-58716021b" target="_blank">
-                        <img class="redes__iconos--mod" src="imagenes/linkedin.png" alt="linkedin" />
-                    </a>
-                    <a class="container__links--mod" href="https://github.com/AlejanroDuran920" target="_blank">
-                        <img class="redes__iconos--mod" src="imagenes/github.png" alt="github" />
-                    </a>
-                    <a class="container__links--mod" href="https://www.facebook.com/angelalejandro.duranpulido" target="_blank">
-                        <img class="redes__iconos--mod" src="imagenes/facebook.png" alt="facebook" />
-                    </a>
-                    <a class="container__links--mod" href="https://www.instagram.com/angel_alejandro920/" target="_blank">
-                        <img class="redes__iconos--mod" src="imagenes/instagram.png" alt="instagram" />
-                    </a>
-                </div>
-            </p>
-        </div>
-        <footer class="container2__footer--mod">
-            <a href="https://www.kuepa.com/" target="_blank">
-                <img class="container2__logo--mod" src="imagenes/kuepa.png" alt="kuepa-edutech" />
-            </a>
-            <div class="container2__div--mod">
-                <h2 class="container2__titulo--mod">Kuepa Edutech</h2>
-                <h3 class="container2__titulo--mod">Grupo 13</h3>
-            </div>
-            <nav class="container2__nav--mod">
-                <a class="container2__links--mod" href="https://www.google.com/maps/search/kuepa+edutech/@4.6213014,-74.1171566,13z/data=!3m1!4b1" target="_blank">Nuestras Sedes</a>
-            </nav>
-        </footer>
-      </div>
+      </section>
+      <article>
+        <p class="text-justify">
+          Nuestro proyecto se basa en la construccion de una pagina de tipo e-commerce la cual tiene una pagina de bienvenida y 3 formularios
+uno para el registro, otro para el inicio de sesion y el ultimo para
+que los visitantes y usuarios registrados del sitio dejen sus
+comentarios con el fin de recibir feedback y mejorar el sitio.
+        </p>
+      </article>
+      <a class="text-decoration-none link-primary" href="Proyecto-Grupo-6/catalogo.html">Conoce nuestro proyecto aqui</a>
     </div>
-  </body>
+    <br />
+    <!--perfiles del grupo-->
+    <div class="row m-auto text-center rounded-3">
+      <h1 class="text text-white">Perfiles Grupo 6</h1>
+    </div>
+    <br />
+    <!--Jose Luis-->
+    <div id="desarrolladores" class="row m-auto p-3 bg bg-info rounded-3">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-3 border border-dark">
+        <div class="row">
+          <div class="mb-3 col-12 col-sm-12 col-md-4 col-lg-12">
+            <img src="imagenes/jose.jpg" class="img-fluid max-width: 100%; height: auto%;" alt="Jose Luis">
+          </div>
+          <div class="col-12 col-sm-12 col-md-8 col-lg-12">
+            <h1 class="text-center">Jose Luis Campo</h1>
+            <p class="text-justify">Hola!!!...soy la persona encargada de desarrollar la pagina de bienvenida, y los formularios de inicio de sesion y de contacto. Pongo a disposicion de mi equipo de trabajo mi experiencia y conocimientos para contribuir al crecimiento del proyecto.</p>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex align-items-center justify-content-center">
+              <a href="https://www.linkedin.com/in/jlcampo92" target="_blank">
+                <i class="bi bi-linkedin" style="font-size: 70px;"></i>
+              </a>
+              <a href="https://github.com/josel36" target="_blank">
+                <i class="bi bi-github" style="font-size: 70px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Daniel Alejandro-->
+      <div id="desarrolladores" class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 border border-dark">
+        <div class="row">
+          <div class="mb-3 col-12 col-sm-12 col-md-12 col-lg-12">
+            <img src="imagenes/daniel.jpeg" class="img-fluid max-width: 100%; height: auto%;" alt="Daniel">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h1 class="text-center">Daniel Diaz</h1>
+            <p class="text-justify">Hola, soy Daniel Diaz, encargado de la parte Formulario de contacto para recibir cualquier sugerencia, y me gusta aportar ideas a mis compañeros para mejoramiento de la página.</p>
+            <div
+              class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex align-items-center justify-content-center">
+              <a href="https://www.facebook.com/danieldiazmor/" target="_blank">
+                <i class="bi bi-facebook" style="font-size: 70px;"></i>
+              </a>
+              <a href="https://www.instagram.com/daniel_alejandro_diiiaz/" target="_blank">
+                <i class="bi bi-instagram" style="font-size: 70px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Angel Alejandro-->
+      <div id="desarrolladores" class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 border border-dark">
+        <div class="row">
+          <div class="mb-3 col-12 col-sm-12 col-md-12 col-lg-12">
+            <img src="imagenes/alejandro.jpeg" class="img-fluid max-width: 100%; height: auto%;" alt="Angel Alejandro">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h1 class="text-center">Alejandro Duran</h1>
+            <p class="text-justify">Soy el encargado de la parte del backend del grupo, y responsable del inicio y catalogo del proyecto en la parte del fronted.</p>
+            <div
+              class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex align-items-center justify-content-center">
+              <a href="https://www.linkedin.com/in/angel-alejandro-duran-pulido-58716021b" target="_blank">
+                <i class="bi bi-linkedin" style="font-size: 70px;"></i>
+              </a>
+              <a href="https://github.com/AlejanroDuran920" target="_blank">
+                <i class="bi bi-github" style="font-size: 70px;"></i>
+              </a>
+              <a href="https://www.facebook.com/angelalejandro.duranpulido" target="_blank">
+                <i class="bi bi-facebook" style="font-size: 70px;"></i>
+              </a>
+              <a href="https://www.instagram.com/angel_alejandro920/" target="_blank">
+                <i class="bi bi-instagram" style="font-size: 70px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+    <!--footer-->
+    <footer class="row p-3 m-auto bg bg-info rounded-3">
+      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+        <a href="https://www.kuepa.com/" target="_blank">
+          <img src="imagenes/kuepa.png" class="img-fluid max-width: 100%; height: auto%;" alt="Responsive image" />
+        </a>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 d-flex align-items-center justify-content-center">
+        <h2>Grupo-13</h2>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 d-flex align-items-center justify-content-center">
+        <nav class="navbar navbar-light">
+          <a class="navbar-brand m-auto link-primary"
+            href="https://www.google.com/maps/search/kuepa+edutech/@4.6213014,-74.1171566,13z/data=!3m1!4b1"
+            target="_blank">Nuestras Sedes</a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
