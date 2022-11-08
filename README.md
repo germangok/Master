@@ -6,7 +6,7 @@ Josè Dario Bonilla Muñoz Lider De Equipo Encargado de realizar:
 2.Index de la pagina
 
 Yohan Andres Chalaca Encargado de realizar:
-1.catalogos 
+1.catalogos de carnes
 2.formularios de catalogos.
 
 Leinys Marìa Orozco Sayas Encargada de realizar:
