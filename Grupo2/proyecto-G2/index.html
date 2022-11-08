@@ -6,44 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vallenato fusión</title>
     <link rel="stylesheet" href="estilop2.css">
+    <link rel="stylesheet" href="/Grupo2/proyecto-G2/Bootstrap/css/bootstrap.min.css">
 
-    <!--TIPOGRAFIAS-->
+     <!--TIPOGRAFIAS-->
     <!--Mr Bedfort-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap" rel="stylesheet">
+    <!--Arizonia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Mr+Bedfort&display=swap" rel="stylesheet">
+    <!--Carter One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <!--Bakbak One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header"> <!--Header Del proyecto FIJO-->
+    <header class="header col-xs-4 col-lg-12 col-xl-14"> <!--Header Del proyecto FIJO-->
         <div class="header-container">
-            <a href="index.html"><img class="logovf1" src="imgs/Logo-VF.png" alt="Logo"></a> <!--Logo de la empresa y link al index-->
+            <a href="index.html"><img class="logovf1" src="imgs/Logo-VF.png" alt="Logo"></a>
             <h1>Vallenato Fusión</h1>
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="/Grupo2/grupo2.html">INICIO</a></li> <!--Botón de regreso a proyecto de grupo-->
-                <li><a href="servicios.html">SERVICIOS</a></li> <!--Boton al apartado de servicios-->
-                <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li> <!--Botón al aprtado de información sobre la empresa-->
+                <li><a href="/Grupo2/grupo2.html">GRUPO</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                <li class="reserve"><a class="reserv" href="https://api.whatsapp.com/send/?phone=%2B573153908754&text&type=phone_number&app_absent=0">RESERVA AQUÍ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="index-main">
+    <main class="index-main col-xs-4 col-lg-12 col-xl-14">
         <div class="index-main--container">
-            <picture>
-                <img class="background-img" src="imgs/Background-vf.png" alt=""> 
+            <picture class="picture">
+                <img class="background-img" src="imgs/Background-vf.png" alt="">
+                <img class="logo2a" src="imgs/Logo2.png">
             </picture>
+        </div>
+        <div class="contact-container">
+            <i class="fa-brands fa-whatsapp whatsapp"></i>
+            <h4>WHATSAPP</h4>
+            <div class="chat-container">
+                <a href="https://api.whatsapp.com/send/?phone=%2B573153908754&text&type=phone_number&app_absent=0">Chatea con nosotros</a>
+            </div>
         </div>
     </main>
 
-    <footer class="footer"> <!--Footer del proyecto FIJO-->
+    <footer class="footer col-xs-4 col-lg-12 col-xl-14"> <!--Footer del proyecto FIJO-->
         <div class="footer-container">
+            <div class="networks-container">
             <h3>NUESTRAS REDES SOCIALES</h3>
-            <ul>
-                <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
-            </ul>
+                <ul>
+                    <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
             <div class="form-container">
                 <h5>RECIBE NUESTRAS MEJORES OFERTAS</h5>
                 <form class="form" action="index.html" method="post">
@@ -55,6 +80,7 @@
         </div>
     </footer>
 </body>
+<script src="/Grupo2/proyecto-G2/Bootstrap/js/bootstrap.bundle.js"></script>
 <!--Iconos-->
 <script src="https://kit.fontawesome.com/b257358025.js" crossorigin="anonymous"></script>
 </html>
