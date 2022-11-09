@@ -1,6 +1,6 @@
 /*************************************************
  * Archivo    : styles.css;
- * Descripcion: Hoja de estilos CSS de la pagina index.html de 
+ * Descripcion: Hoja de estilos CSS de la pagina index.html de
  *              del Proyecto Final Modulo 4;
  * Autor      : Raul Ibañez;
  * Version    : 2.0;
@@ -8,7 +8,7 @@
  * Integrantes: Becerra Nicolas
  *              Castañeda Stiven
  *              Guevara Nelson
- *              Ibañez Raul     
+ *              Ibañez Raul
  *-----------------------------------------------
  * Implementacion de Bootstrap y Media Queries
  *-----------------------------------------------
@@ -60,7 +60,7 @@ footer{
 }
 footer p{
     /* LETRAS DEL FOOTER*/
-    color:#FFFFFF; 
+    color:#FFFFFF;
 }
 /**********************************************
  *    MEDIA QUERIES
