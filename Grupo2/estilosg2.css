@@ -46,6 +46,7 @@ nav div{
 .nav-content a{
     padding: 20px 5px;
     color: #fff;
+    text-decoration: none;
 }
 .nav-content a:hover{
     color: #00f;
